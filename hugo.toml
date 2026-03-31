@@ -1,4 +1,4 @@
-baseURL = "https://royksheehan.github.io/"
+baseURL = "https://fiidireto.online/"
 languageCode = "pt-br"
 title = "FII Direto"
 enableRobotsTXT = true
@@ -15,7 +15,7 @@ summaryLength = 40
   description = "Resumos e análises de relatórios gerenciais de Fundos Imobiliários"
   author = "FII Direto"
   keywords = "FII, fundos imobiliários, relatórios gerenciais, shoppings, logístico, lajes corporativas"
-  siteUrl = "https://royksheehan.github.io"
+  siteUrl = "https://fiidireto.online"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
