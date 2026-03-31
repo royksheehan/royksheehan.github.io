@@ -1,0 +1,85 @@
+{{ define "main" }}
+<div class="container page-body">
+  <article class="single-post" data-pagefind-body>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="{{ .Site.BaseURL }}">Início</a>
+      {{ with .CurrentSection.Parent }}
+        {{ if ne .Title "posts" }}
+          <span>›</span>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{ end }}
+      {{ end }}
+      <span>›</span>
+      <a href="{{ .CurrentSection.RelPermalink }}">{{ .CurrentSection.Title }}</a>
+    </nav>
+
+    <!-- Cabeçalho -->
+    <header class="post-header">
+      <h1 class="post-title-single">{{ .Title }}</h1>
+      {{ with .Description }}<p class="post-desc">{{ . }}</p>{{ end }}
+      <div class="post-meta-bar">
+        <span class="post-date">{{ .Date.Format "02 de January de 2006" }}</span>
+        <span class="post-reading">{{ .ReadingTime }} min de leitura</span>
+        {{ with .Params.ticker }}
+          <a href="{{ "tickers/" | absURL }}{{ lower . }}/" class="post-ticker ticker-fundo">{{ . }}</a>
+        {{ end }}
+      </div>
+      <div class="post-tags-bar">
+        {{ range .Params.tags }}<span class="tag">{{ . }}</span>{{ end }}
+      </div>
+    </header>
+
+    <hr class="post-divider">
+
+    <!-- Conteúdo -->
+    <div class="post-content">
+      {{ .Content }}
+    </div>
+
+    <hr class="post-divider">
+
+    <!-- Aviso legal -->
+    <div class="disclaimer">
+      ⚠️ Este conteúdo é apenas um resumo informativo do relatório gerencial divulgado pelo fundo. Não constitui recomendação de compra ou venda de cotas. Consulte um assessor de investimentos.
+    </div>
+
+    <!-- Badges de categoria abaixo do disclaimer -->
+    <div class="post-category-badges">
+      {{ with .CurrentSection.Parent }}
+        {{ if ne .Title "posts" }}
+          {{ $class := "ticker-tijolo" }}
+          {{ if eq .Title "Fundo de Papel" }}{{ $class = "ticker-papel" }}{{ end }}
+          {{ if eq .Title "Fiagro" }}{{ $class = "ticker-fiagro" }}{{ end }}
+          <a href="{{ .RelPermalink }}" class="post-ticker {{ $class }}">{{ .Title }}</a>
+        {{ end }}
+      {{ end }}
+      {{ $subClass := "ticker-tijolo" }}
+      {{ with .CurrentSection.Parent }}
+        {{ if eq .Title "Fundo de Papel" }}{{ $subClass = "ticker-papel" }}{{ end }}
+        {{ if eq .Title "Fiagro" }}{{ $subClass = "ticker-fiagro" }}{{ end }}
+      {{ end }}
+      <a href="{{ .CurrentSection.RelPermalink }}" class="post-ticker {{ $subClass }}">{{ .CurrentSection.Title }}</a>
+    </div>
+
+    <!-- Navegação entre posts -->
+    <nav class="post-nav">
+      {{ with .PrevInSection }}
+        <a href="{{ .RelPermalink }}" class="post-nav-prev">
+          <span>← Anterior</span>
+          <strong>{{ .Title }}</strong>
+        </a>
+      {{ end }}
+      {{ with .NextInSection }}
+        <a href="{{ .RelPermalink }}" class="post-nav-next">
+          <span>Próximo →</span>
+          <strong>{{ .Title }}</strong>
+        </a>
+      {{ end }}
+    </nav>
+
+  </article>
+  {{ partial "sidebar.html" . }}
+</div>
+{{ end }}

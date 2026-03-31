@@ -1,0 +1,57 @@
+{{ define "main" }}
+<div class="container page-body">
+  <div class="posts-wrap">
+
+    <div class="section-header">
+      <h1 class="section-title">{{ .Title }}</h1>
+      {{ with .Description }}<p class="section-desc">{{ . }}</p>{{ end }}
+
+      {{ if .Sections }}
+      <div class="subcats">
+        {{ range .Sections }}
+        <a href="{{ .RelPermalink }}" class="subcat-pill">
+          {{ .Title }} <span>{{ len .RegularPagesRecursive }}</span>
+        </a>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+
+    <div class="section-label">{{ len .RegularPagesRecursive }} relatórios nesta categoria</div>
+
+    <div class="posts-list">
+      {{ range $i, $p := .RegularPagesRecursive.ByDate.Reverse }}
+
+      {{ $rootSection := $p.CurrentSection.Parent.Title }}
+      {{ $currentSection := $p.CurrentSection.Title }}
+      {{ $numClass := "num-tijolo" }}
+      {{ if or (eq $rootSection "Fundo de Papel") (eq $currentSection "Fundo de Papel") }}{{ $numClass = "num-papel" }}{{ end }}
+      {{ if or (eq $rootSection "Fiagro") (eq $currentSection "Fiagro") }}{{ $numClass = "num-fiagro" }}{{ end }}
+
+      <a href="{{ $p.RelPermalink }}" class="post-card">
+        <div class="post-num {{ $numClass }}"></div>
+        <div class="post-body">
+          <div class="post-cats">
+            {{ with $p.CurrentSection.Parent }}<span class="post-cat-parent">{{ .Title }}</span>{{ end }}
+            <span class="post-cat">{{ $p.CurrentSection.Title }}</span>
+          </div>
+          <h2 class="post-title">{{ $p.Title }}</h2>
+          <p class="post-excerpt">{{ $p.Summary }}</p>
+          <div class="post-footer">
+            <span class="post-date">{{ $p.Date.Format "02 Jan 2006" }}</span>
+            <div class="post-tags">
+              {{ if $p.Params.tags }}{{ range first 3 $p.Params.tags }}<span class="tag">{{ . }}</span>{{ end }}{{ end }}
+            </div>
+          </div>
+        </div>
+      </a>
+
+      {{ end }}
+    </div>
+
+    {{ template "_internal/pagination.html" . }}
+
+  </div>
+  {{ partial "sidebar.html" . }}
+</div>
+{{ end }}

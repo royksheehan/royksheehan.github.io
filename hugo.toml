@@ -1,0 +1,77 @@
+baseURL = "https://royksheehan.github.io/"
+languageCode = "pt-br"
+title = "FII Direto"
+enableRobotsTXT = true
+summaryLength = 40
+
+[pagination]
+  pagerSize = 10
+
+[taxonomies]
+  tag    = "tags"
+  ticker = "tickers"
+
+[params]
+  description = "Resumos e análises de relatórios gerenciais de Fundos Imobiliários"
+  author = "FII Direto"
+  keywords = "FII, fundos imobiliários, relatórios gerenciais, shoppings, logístico, lajes corporativas"
+  siteUrl = "https://royksheehan.github.io"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section  = ["HTML", "RSS"]
+  page     = ["HTML"]
+  taxonomy = ["HTML"]
+  term     = ["HTML"]
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.highlight]
+  style = "github"
+
+# ── Menu principal ────────────────────────────────────────
+[[menus.main]]
+  name   = "Início"
+  url    = "/"
+  weight = 1
+
+[[menus.main]]
+  name   = "FIIs"
+  url    = "/posts/"
+  weight = 2
+
+[[menus.main]]
+  name   = "Fundo de Tijolo"
+  url    = "/posts/fundo-de-tijolo/"
+  parent = "FIIs"
+  weight = 1
+
+[[menus.main]]
+  name   = "Fundo de Papel"
+  url    = "/posts/fundo-de-papel/"
+  parent = "FIIs"
+  weight = 2
+
+[[menus.main]]
+  name   = "Fiagro"
+  url    = "/posts/fiagro/"
+  parent = "FIIs"
+  weight = 3
+
+[[menus.main]]
+  name   = "FI-Infra"
+  url    = "/posts/fi-infra/"
+  parent = "FIIs"
+  weight = 4
+
+[[menus.main]]
+  name   = "Fundos de Fundos"
+  url    = "/posts/fundos-de-fundos/"
+  parent = "FIIs"
+  weight = 5
+
+[[menus.main]]
+  name   = "Sobre"
+  url    = "/sobre/"
+  weight = 10

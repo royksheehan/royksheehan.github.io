@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  {{ partial "header.html" . }}
+  <main class="site-main">
+    {{ block "main" . }}{{ end }}
+  </main>
+  {{ partial "footer.html" . }}
+  <!-- Pagefind search UI -->
+  <link href="{{ "pagefind/pagefind-ui.css" | absURL }}" rel="stylesheet">
+  <script src="{{ "pagefind/pagefind-ui.js" | absURL }}"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+{{ define "main" }}
+<div class="container page-body">
+  <div class="posts-wrap">
+
+    <div class="section-header">
+      <h1 class="section-title ticker-page-title">{{ .Title }}</h1>
+      {{ with .Content }}
+        <div class="ticker-page-desc">{{ . }}</div>
+      {{ else }}
+        <p class="section-desc">Todos os relatórios gerenciais publicados sobre o {{ .Title }}.</p>
+      {{ end }}
+    </div>
+
+    {{ $ticker := lower .Title }}
+    {{ $posts := where .Site.RegularPages "Section" "posts" }}
+    {{ $tickerPosts := slice }}
+    {{ range $posts }}
+      {{ if eq (lower (default "" .Params.ticker)) $ticker }}
+        {{ $tickerPosts = $tickerPosts | append . }}
+      {{ end }}
+    {{ end }}
+
+    <div class="section-label">{{ len $tickerPosts }} relatório{{ if ne (len $tickerPosts) 1 }}s{{ end }} publicado{{ if ne (len $tickerPosts) 1 }}s{{ end }}</div>
+
+    <div class="posts-list">
+      {{ range $i, $p := sort $tickerPosts "Date" "desc" }}
+        {{ $rootSection := $p.CurrentSection.Parent.Title }}
+        {{ $currentSection := $p.CurrentSection.Title }}
+        {{ $numClass := "num-tijolo" }}
+        {{ if or (eq $rootSection "Fundo de Papel") (eq $currentSection "Fundo de Papel") }}{{ $numClass = "num-papel" }}{{ end }}
+        {{ if or (eq $rootSection "Fiagro") (eq $currentSection "Fiagro") }}{{ $numClass = "num-fiagro" }}{{ end }}
+
+        <a href="{{ $p.RelPermalink }}" class="post-card">
+          <div class="post-num {{ $numClass }}"></div>
+          <div class="post-body">
+            <div class="post-cats">
+              {{ with $p.CurrentSection.Parent }}<span class="post-cat-parent">{{ .Title }}</span>{{ end }}
+              <span class="post-cat">{{ $p.CurrentSection.Title }}</span>
+            </div>
+            <h2 class="post-title">{{ $p.Title }}</h2>
+            <p class="post-excerpt">{{ $p.Summary }}</p>
+            <div class="post-footer">
+              <span class="post-date">{{ $p.Date.Format "02 Jan 2006" }}</span>
+              <div class="post-tags">
+                {{ if $p.Params.tags }}{{ range first 3 $p.Params.tags }}<span class="tag">{{ . }}</span>{{ end }}{{ end }}
+              </div>
+            </div>
+          </div>
+        </a>
+      {{ end }}
+    </div>
+
+  </div>
+  {{ partial "sidebar.html" . }}
+</div>
+{{ end }}

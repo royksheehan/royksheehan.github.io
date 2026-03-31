@@ -1,0 +1,147 @@
+<header class="site-header">
+  <div class="header-top">
+    <span>Análises independentes · Fundos Imobiliários · Atualizado semanalmente</span>
+  </div>
+  <div class="header-main container">
+
+    <!-- Mobile: hamburguer esquerdo -->
+    <button class="nav-toggle" aria-label="Abrir menu" id="nav-toggle">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Logo central -->
+    <a href="{{ .Site.BaseURL }}" class="site-logo">FII<span>Direto</span></a>
+
+    <!-- Desktop: nav -->
+    <nav id="site-nav" class="site-nav">
+      {{ range .Site.Menus.main }}
+        {{ if .HasChildren }}
+          <div class="nav-item has-dropdown">
+            <a href="{{ .URL }}" class="nav-link">{{ .Name }} <span class="arrow">▾</span></a>
+            <ul class="dropdown">
+              {{ range .Children }}
+                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+              {{ end }}
+            </ul>
+          </div>
+        {{ else if not .Parent }}
+          <a href="{{ .URL }}" class="nav-link{{ if eq $.RelPermalink .URL }} active{{ end }}">{{ .Name }}</a>
+        {{ end }}
+      {{ end }}
+    </nav>
+
+    <!-- Mobile: ícone de busca direito -->
+    <button class="mobile-search-btn" aria-label="Buscar" id="mobile-search-btn">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    </button>
+
+  </div>
+
+  <!-- Mobile: barra de busca expansível -->
+  <div class="mobile-search-bar" id="mobile-search-bar">
+    <div class="container">
+      <input
+        type="text"
+        id="mobile-ticker-search"
+        class="mobile-ticker-input"
+        placeholder="Buscar fundo, ticker..."
+        autocomplete="off"
+      >
+      <ul id="mobile-ticker-results" class="ticker-results mobile-ticker-results" style="display:none"></ul>
+    </div>
+  </div>
+
+  <!-- Mobile: menu drawer -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="mobile-drawer-inner">
+      {{ range .Site.Menus.main }}
+        {{ if .HasChildren }}
+          <div class="drawer-group">
+            <a href="{{ .URL }}" class="drawer-parent">{{ .Name }}</a>
+            <ul class="drawer-children">
+              {{ range .Children }}
+                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+              {{ end }}
+            </ul>
+          </div>
+        {{ else if not .Parent }}
+          <a href="{{ .URL }}" class="drawer-link">{{ .Name }}</a>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+  <div class="mobile-overlay" id="mobile-overlay"></div>
+
+</header>
+
+<script>
+(function(){
+  const toggle   = document.getElementById('nav-toggle');
+  const drawer   = document.getElementById('mobile-drawer');
+  const overlay  = document.getElementById('mobile-overlay');
+  const searchBtn= document.getElementById('mobile-search-btn');
+  const searchBar= document.getElementById('mobile-search-bar');
+  const input    = document.getElementById('mobile-ticker-search');
+  const results  = document.getElementById('mobile-ticker-results');
+
+  function closeAll() {
+    drawer.classList.remove('open');
+    overlay.classList.remove('open');
+    searchBar.classList.remove('open');
+  }
+
+  toggle.addEventListener('click', function(){
+    const isOpen = drawer.classList.contains('open');
+    closeAll();
+    if (!isOpen) {
+      drawer.classList.add('open');
+      overlay.classList.add('open');
+    }
+  });
+
+  overlay.addEventListener('click', closeAll);
+
+  searchBtn.addEventListener('click', function(){
+    const isOpen = searchBar.classList.contains('open');
+    closeAll();
+    if (!isOpen) {
+      searchBar.classList.add('open');
+      setTimeout(() => input && input.focus(), 100);
+    }
+  });
+
+  // Busca mobile — reutiliza o mesmo index.json
+  const baseURL = '{{ .Site.BaseURL }}';
+  let funds = [];
+
+  fetch(baseURL + 'index.json')
+    .then(r => r.json())
+    .then(data => {
+      const seen = new Set();
+      funds = data.filter(item => {
+        if (!item.ticker || seen.has(item.ticker)) return false;
+        seen.add(item.ticker);
+        return true;
+      }).map(item => ({
+        ticker: item.ticker.toUpperCase(),
+        url: baseURL + 'tickers/' + item.ticker.toLowerCase() + '/'
+      }));
+    }).catch(()=>{});
+
+  if (input && results) {
+    input.addEventListener('input', function(){
+      const q = this.value.trim().toLowerCase();
+      results.innerHTML = '';
+      if (q.length < 1) { results.style.display='none'; return; }
+      const matches = funds.filter(f => f.ticker.toLowerCase().includes(q)).slice(0,8);
+      if (!matches.length) { results.style.display='none'; return; }
+      matches.forEach(f => {
+        const li = document.createElement('li');
+        li.innerHTML = '<a href="'+f.url+'"><span class="tr-ticker">'+f.ticker+'</span></a>';
+        results.appendChild(li);
+      });
+      results.style.display = 'block';
+    });
+  }
+})();
+</script>

@@ -1,0 +1,124 @@
+<aside class="sidebar">
+
+  <!-- Busca customizada por ticker -->
+  <div class="sb-section">
+    <div class="sb-title">Buscar fundo</div>
+    <div class="ticker-search-wrap">
+      <input
+        type="text"
+        id="ticker-search"
+        class="ticker-search-input"
+        placeholder="BTLG11, HGLG11, KNCR11..."
+        autocomplete="off"
+      >
+      <ul id="ticker-results" class="ticker-results" style="display:none"></ul>
+    </div>
+  </div>
+
+  <!-- Categorias -->
+  <div class="sb-section">
+    <div class="sb-title">Categorias</div>
+    <ul class="sb-cat-list">
+      <li>
+        <a href="{{ "posts/fundo-de-tijolo/" | absURL }}" class="sb-cat-parent">Fundo de Tijolo</a>
+        <ul class="sb-cat-children">
+          <li><a href="{{ "posts/fundo-de-tijolo/shoppings/" | absURL }}">↳ Shoppings</a></li>
+          <li><a href="{{ "posts/fundo-de-tijolo/logistico/" | absURL }}">↳ Logístico / Galpões</a></li>
+          <li><a href="{{ "posts/fundo-de-tijolo/lajes-corporativas/" | absURL }}">↳ Lajes Corporativas</a></li>
+        </ul>
+      </li>
+      <li style="margin-top:10px">
+        <a href="{{ "posts/fundo-de-papel/" | absURL }}" class="sb-cat-parent">Fundo de Papel</a>
+        <ul class="sb-cat-children">
+          <li><a href="{{ "posts/fundo-de-papel/multiestrategia/" | absURL }}">↳ Multiestratégia</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Posts recentes -->
+  <div class="sb-section">
+    <div class="sb-title">Mais recentes</div>
+    <ul class="sb-recent">
+      {{ $posts := where .Site.RegularPages "Section" "posts" }}
+      {{ range first 5 ($posts.ByDate.Reverse) }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <span>{{ .Date.Format "02 Jan 2006" }}</span>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+
+  <!-- RSS -->
+  <div class="sb-section">
+    <div class="sb-title">Assinar</div>
+    <a href="{{ "index.xml" | absURL }}" class="rss-btn">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M6.18 15.64a2.18 2.18 0 010 4.36 2.18 2.18 0 010-4.36M4 4.44A15.56 15.56 0 0119.56 20h-2.83A12.73 12.73 0 006.18 7.27V4.44m0 5.66a9.9 9.9 0 019.9 9.9h-2.83A7.07 7.07 0 006.18 12.93V10.1z"/></svg>
+      Feed RSS
+    </a>
+  </div>
+
+</aside>
+
+<script>
+(function () {
+  const baseURL = '{{ .Site.BaseURL }}';
+  const indexURL = baseURL + 'index.json';
+
+  let funds = [];
+
+  fetch(indexURL)
+    .then(r => r.json())
+    .then(data => {
+      const seen = new Set();
+      funds = data.filter(item => {
+        if (!item.ticker || seen.has(item.ticker)) return false;
+        seen.add(item.ticker);
+        return true;
+      }).map(item => ({
+        ticker: item.ticker.toUpperCase(),
+        url: baseURL + 'tickers/' + item.ticker.toLowerCase() + '/'
+      }));
+    })
+    .catch(() => {});
+
+  const input = document.getElementById('ticker-search');
+  const results = document.getElementById('ticker-results');
+
+  if (!input || !results) return;
+
+  input.addEventListener('input', function () {
+    const q = this.value.trim().toLowerCase();
+    results.innerHTML = '';
+
+    if (q.length < 1) {
+      results.style.display = 'none';
+      return;
+    }
+
+    const matches = funds.filter(f =>
+      f.ticker.toLowerCase().includes(q)
+    ).slice(0, 8);
+
+    if (matches.length === 0) {
+      results.style.display = 'none';
+      return;
+    }
+
+    matches.forEach(f => {
+      const li = document.createElement('li');
+      li.innerHTML = '<a href="' + f.url + '"><span class="tr-ticker">' + f.ticker + '</span></a>';
+      results.appendChild(li);
+    });
+
+    results.style.display = 'block';
+  });
+
+  document.addEventListener('click', function (e) {
+    if (!input.contains(e.target) && !results.contains(e.target)) {
+      results.style.display = 'none';
+    }
+  });
+})();
+</script>

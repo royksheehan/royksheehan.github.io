@@ -1,0 +1,35 @@
+{{ define "main" }}
+<div class="container page-body">
+  <div class="posts-wrap">
+
+    <div class="section-header">
+      <h1 class="section-title">Fundos</h1>
+      <p class="section-desc">Todos os fundos imobiliários com relatórios publicados no FII Direto.</p>
+    </div>
+
+    {{ $tickers := where .Site.Pages "Section" "tickers" }}
+    {{ $tickers = where $tickers "Kind" "term" }}
+
+    <div class="section-label">{{ len $tickers }} fundos cadastrados</div>
+
+    <div class="tickers-grid">
+      {{ range $tickers.ByTitle }}
+        {{ $tickerName := .Title }}
+        {{ $posts := where $.Site.RegularPages "Section" "posts" }}
+        {{ $count := 0 }}
+        {{ range $posts }}
+          {{ if eq (upper (default "" .Params.ticker)) (upper $tickerName) }}
+            {{ $count = add $count 1 }}
+          {{ end }}
+        {{ end }}
+        <a href="{{ .RelPermalink }}" class="ticker-card">
+          <div class="ticker-card-name">{{ .Title }}</div>
+          <div class="ticker-card-count">{{ $count }} relatório{{ if ne $count 1 }}s{{ end }}</div>
+        </a>
+      {{ end }}
+    </div>
+
+  </div>
+  {{ partial "sidebar.html" . }}
+</div>
+{{ end }}
