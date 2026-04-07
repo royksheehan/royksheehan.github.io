@@ -6,7 +6,7 @@ ticker: "TRXF11"
 slug: "relatorio-gerencial-trxf11-marco-2026"
 ---
 
-O TRXF11 entregou mais um mês de rendimento consistente em março de 2026, com **R$ 0,93 por cota**, mantendo um **Dividend Yield mensal de 1,01% (12,15% anualizado)**. A cota de mercado fechou em **R$ 91,83**, enquanto o valor patrimonial está em **R$ 99,98**, indicando um desconto relevante. O fundo já conta com **270.233 cotistas**, reforçando sua popularidade entre investidores de renda. Mas com esse desconto e novas aquisições relevantes, será que o fundo ainda tem espaço para crescer com segurança?
+O TRXF11 entregou mais um mês de rendimento consistente em março de 2026, com **R$ 0,93 por cota**, mantendo um **Dividend Yield mensal de 1,01% (12,15% anualizado)**. A cota de mercado fechou em **R$ 91,83**, enquanto o valor patrimonial está em **R$ 99,98**, indicando um desconto relevante.<!--more--> O fundo já conta com **270.233 cotistas**, reforçando sua popularidade entre investidores de renda. Mas com esse desconto e novas aquisições relevantes, será que o fundo ainda tem espaço para crescer com segurança?
 
 ---
 
