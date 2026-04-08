@@ -5,6 +5,11 @@
 {{ $others := after 1 (first 4 ($posts.ByDate.Reverse)) }}
 
 <!-- ── Hero: post em destaque ─────────────────────────── -->
+<section class="sr-only" aria-label="Introdução do site">
+  <h1>Análises de Fundos Imobiliários: relatórios gerenciais simplificados</h1>
+  <p>Conteúdo atualizado semanalmente com foco em FIIs de tijolo, papel, fiagro e fi-infra.</p>
+</section>
+
 {{ range $latest }}
 <section class="hero">
   <div class="container hero-inner">
@@ -58,9 +63,6 @@
           <p class="post-excerpt">{{ $p.Summary }}</p>
           <div class="post-footer">
             <span class="post-date">{{ $p.Date.Format "02 Jan 2006" }}</span>
-            <div class="post-tags">
-              {{ if $p.Params.tags }}{{ range first 3 $p.Params.tags }}<span class="tag">{{ . }}</span>{{ end }}{{ end }}
-            </div>
           </div>
         </div>
       </a>

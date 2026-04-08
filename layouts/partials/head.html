@@ -1,28 +1,42 @@
 {{- $isHome := .IsHome -}}
 {{- $isPage := .IsPage -}}
+{{- $is404 := eq .Kind "404" -}}
+{{- $isPaginated := false -}}
+{{- if .IsNode -}}
+  {{- $isPaginated = gt .Paginator.PageNumber 1 -}}
+{{- end -}}
 {{- $siteTitle := .Site.Title -}}
 {{- $defaultDescription := .Site.Params.description -}}
-{{- $pageDescription := .Description | default (.Summary | plainify | strings.TrimSpace | truncate 155) | default $defaultDescription -}}
+{{- $summary := .Summary | plainify | strings.TrimSpace | truncate 155 -}}
+{{- $pageDescription := .Description | default $summary | default $defaultDescription -}}
 {{- $canonical := .Permalink -}}
-{{- $defaultImage := "images/planilha-para-controle-de-fundos-imobiliarios.png" | absURL -}}
+{{- $defaultImage := .Site.Params.defaultImage | default "images/planilha-para-controle-de-fundos-imobiliarios.png" | absURL -}}
 {{- $image := cond (and $isPage .Params.image) (.Params.image | absURL) $defaultImage -}}
+{{- $pageTitle := .Title | default $siteTitle -}}
 
 {{- $title := "" -}}
 {{- if $isHome -}}
-  {{- $title = printf "%s | Resumos de FIIs e FIAGRO" $siteTitle -}}
+  {{- $title = printf "%s | Resumos de FIIs, FIAGRO e FI-Infra" $siteTitle -}}
 {{- else if eq .Kind "term" -}}
-  {{- $title = printf "%s: relatórios e análises | %s" .Title $siteTitle -}}
+  {{- $title = printf "%s: análises, relatórios e indicadores | %s" $pageTitle $siteTitle -}}
 {{- else if eq .Kind "section" -}}
-  {{- $title = printf "%s | Relatórios gerenciais de FIIs" .Title -}}
+  {{- $title = printf "%s | Relatórios gerenciais atualizados" $pageTitle -}}
 {{- else -}}
-  {{- $title = printf "%s | %s" .Title $siteTitle -}}
+  {{- $title = printf "%s | %s" $pageTitle $siteTitle -}}
+{{- end -}}
+{{- if $isPaginated -}}
+  {{- $title = printf "%s - Página %d" $title .Paginator.PageNumber -}}
+{{- end -}}
+
+{{- $robots := "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" -}}
+{{- if or $is404 $isPaginated -}}
+  {{- $robots = "noindex, follow" -}}
 {{- end -}}
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="robots" content="{{ $robots }}">
 
-<!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HFJ09VVR00"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -31,14 +45,12 @@
   gtag('config', 'G-HFJ09VVR00');
 </script>
 
-<!-- SEO base -->
 <title>{{ $title }}</title>
 <meta name="description" content="{{ $pageDescription }}">
-<meta name="keywords" content="{{ .Site.Params.keywords }}">
 <meta name="author" content="{{ .Site.Params.author }}">
+{{ with .Site.Params.keywords }}<meta name="keywords" content="{{ . }}">{{ end }}
 <link rel="canonical" href="{{ $canonical }}">
 
-<!-- Open Graph -->
 <meta property="og:locale" content="pt_BR">
 <meta property="og:type" content="{{ if $isPage }}article{{ else }}website{{ end }}">
 <meta property="og:title" content="{{ $title }}">
@@ -46,20 +58,20 @@
 <meta property="og:url" content="{{ $canonical }}">
 <meta property="og:site_name" content="{{ $siteTitle }}">
 <meta property="og:image" content="{{ $image }}">
-<meta property="og:image:alt" content="{{ $title }}">
+<meta property="og:image:alt" content="{{ $pageTitle }}">
 
 {{ if $isPage }}
 <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
 <meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+<meta property="article:section" content="{{ with .CurrentSection }}{{ .Title }}{{ end }}">
 {{ end }}
 
-<!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
+{{ with .Site.Params.twitterSite }}<meta name="twitter:site" content="{{ . }}">{{ end }}
 <meta name="twitter:title" content="{{ $title }}">
 <meta name="twitter:description" content="{{ $pageDescription }}">
 <meta name="twitter:image" content="{{ $image }}">
 
-<!-- Schema.org -->
 {{ if $isPage }}
 <script type="application/ld+json">
 {
@@ -70,9 +82,8 @@
   "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
   "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
   "mainEntityOfPage": {{ $canonical | jsonify }},
-  "keywords": {{ .Site.Params.keywords | jsonify }},
   "author": {
-    "@type": "Person",
+    "@type": "Organization",
     "name": {{ .Site.Params.author | jsonify }}
   },
   "publisher": {
@@ -89,7 +100,12 @@
   "@type": "WebSite",
   "name": {{ $siteTitle | jsonify }},
   "url": {{ .Site.BaseURL | jsonify }},
-  "description": {{ $defaultDescription | jsonify }}
+  "description": {{ $defaultDescription | jsonify }},
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {{ (printf "%sposts/?q={search_term_string}" .Site.BaseURL) | jsonify }},
+    "query-input": "required name=search_term_string"
+  }
 }
 </script>
 {{ end }}

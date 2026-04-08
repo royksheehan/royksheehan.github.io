@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+# Arquivos internos de busca não precisam ser rastreados
+Disallow: /pagefind/
+
 Sitemap: https://fiidireto.online/sitemap.xml
