@@ -548,3 +548,17 @@ a.post-card .post-title {
   width: 100%;
   height: 8px;
 }
+
+/* ── Banner sidebar ───────────────────────────────────── */
+.sidebar-banner {
+  display: block;
+  border: .5px solid var(--border);
+  overflow: hidden;
+  transition: opacity .2s;
+}
+.sidebar-banner:hover { opacity: .9; }
+.sidebar-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
