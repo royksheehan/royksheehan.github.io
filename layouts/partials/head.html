@@ -7,9 +7,6 @@
 {{- $defaultImage := "images/planilha-para-controle-de-fundos-imobiliarios.png" | absURL -}}
 {{- $image := cond (and $isPage .Params.image) (.Params.image | absURL) $defaultImage -}}
 
-{{- $tags := .Params.tags | default (slice) -}}
-{{- $hasTags := gt (len $tags) 0 -}}
-
 {{- $title := "" -}}
 {{- if $isHome -}}
   {{- $title = printf "%s | Resumos de FIIs e FIAGRO" $siteTitle -}}
@@ -37,7 +34,7 @@
 <!-- SEO base -->
 <title>{{ $title }}</title>
 <meta name="description" content="{{ $pageDescription }}">
-<meta name="keywords" content="{{ if $hasTags }}{{ delimit $tags ", " }}{{ else }}{{ .Site.Params.keywords }}{{ end }}">
+<meta name="keywords" content="{{ .Site.Params.keywords }}">
 <meta name="author" content="{{ .Site.Params.author }}">
 <link rel="canonical" href="{{ $canonical }}">
 
@@ -54,13 +51,6 @@
 {{ if $isPage }}
 <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
 <meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
-
-{{ if $hasTags }}
-  {{ range $tags }}
-    <meta property="article:tag" content="{{ . }}">
-  {{ end }}
-{{ end }}
-
 {{ end }}
 
 <!-- Twitter -->
@@ -80,7 +70,7 @@
   "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
   "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
   "mainEntityOfPage": {{ $canonical | jsonify }},
-  "keywords": {{ if $hasTags }}{{ delimit $tags ", " | jsonify }}{{ else }}{{ .Site.Params.keywords | jsonify }}{{ end }},
+  "keywords": {{ .Site.Params.keywords | jsonify }},
   "author": {
     "@type": "Person",
     "name": {{ .Site.Params.author | jsonify }}
