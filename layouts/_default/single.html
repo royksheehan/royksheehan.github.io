@@ -26,9 +26,6 @@
           <a href="{{ "tickers/" | absURL }}{{ lower . }}/" class="post-ticker ticker-fundo">{{ . }}</a>
         {{ end }}
       </div>
-      <div class="post-tags-bar">
-        {{ range .Params.tags }}<span class="tag">{{ . }}</span>{{ end }}
-      </div>
     </header>
 
     <hr class="post-divider">

@@ -8,7 +8,6 @@ summaryLength = 40
   pagerSize = 10
 
 [taxonomies]
-  tag    = "tags"
   ticker = "tickers"
 
 [params]
@@ -16,6 +15,8 @@ summaryLength = 40
   author = "FII Direto"
   keywords = "FII, fundos imobiliários, relatórios gerenciais, shoppings, logístico, lajes corporativas"
   siteUrl = "https://fiidireto.online"
+  defaultImage = "images/planilha-para-controle-de-fundos-imobiliarios.png"
+  twitterSite = "@fiidireto"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
@@ -30,7 +31,6 @@ summaryLength = 40
 [markup.highlight]
   style = "github"
 
-# ── Menu principal ────────────────────────────────────────
 [[menus.main]]
   name   = "Início"
   url    = "/"

@@ -11,15 +11,20 @@
         return;
       }
 
-      const matches = funds.filter(f => f.ticker.toLowerCase().includes(q)).slice(0, 8);
+      const matches = funds
+        .filter(function (fund) {
+          return fund.tickerLower.includes(q) || fund.titleLower.includes(q);
+        })
+        .slice(0, 8);
+
       if (!matches.length) {
         results.style.display = 'none';
         return;
       }
 
-      matches.forEach(f => {
+      matches.forEach(function (fund) {
         const li = document.createElement('li');
-        li.innerHTML = '<a href="' + f.url + '"><span class="tr-ticker">' + f.ticker + '</span></a>';
+        li.innerHTML = '<a href="' + fund.url + '"><span class="tr-ticker">' + fund.ticker + '</span></a>';
         results.appendChild(li);
       });
 
@@ -73,27 +78,39 @@
         if (!isOpen) {
           searchBar.classList.add('open');
           searchBtn.setAttribute('aria-expanded', 'true');
-          setTimeout(() => mobileInput && mobileInput.focus(), 100);
+          setTimeout(function () {
+            if (mobileInput) mobileInput.focus();
+          }, 100);
         }
       });
     }
 
-    fetch(baseURL + 'index.json')
-      .then(r => r.json())
-      .then(data => {
+    fetch(new URL('index.json', baseURL).toString())
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (data) {
         const seen = new Set();
-        const funds = data.filter(item => {
-          if (!item.ticker || seen.has(item.ticker)) return false;
-          seen.add(item.ticker);
-          return true;
-        }).map(item => ({
-          ticker: item.ticker.toUpperCase(),
-          url: baseURL + 'tickers/' + item.ticker.toLowerCase() + '/'
-        }));
+        const funds = data
+          .filter(function (item) {
+            if (!item.ticker || seen.has(item.ticker)) return false;
+            seen.add(item.ticker);
+            return true;
+          })
+          .map(function (item) {
+            const ticker = item.ticker.toUpperCase();
+            const title = item.title || '';
+            return {
+              ticker: ticker,
+              tickerLower: ticker.toLowerCase(),
+              titleLower: title.toLowerCase(),
+              url: new URL('tickers/' + item.ticker.toLowerCase() + '/', baseURL).toString()
+            };
+          });
 
         buildTickerSearch(document.getElementById('ticker-search'), document.getElementById('ticker-results'), funds);
         buildTickerSearch(mobileInput, mobileResults, funds);
       })
-      .catch(() => {});
+      .catch(function () {});
   });
 })();

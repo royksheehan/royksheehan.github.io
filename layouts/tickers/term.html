@@ -2,6 +2,14 @@
 <div class="container page-body">
   <div class="posts-wrap">
 
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="{{ .Site.BaseURL }}">Início</a>
+      <span>›</span>
+      <a href="{{ "tickers/" | absURL }}">Tickers</a>
+      <span>›</span>
+      <span>{{ .Title }}</span>
+    </nav>
+
     <div class="section-header">
       <h1 class="section-title ticker-page-title">{{ .Title }}</h1>
       {{ with .Content }}
@@ -41,9 +49,6 @@
             <p class="post-excerpt">{{ $p.Summary }}</p>
             <div class="post-footer">
               <span class="post-date">{{ $p.Date.Format "02 Jan 2006" }}</span>
-              <div class="post-tags">
-                {{ if $p.Params.tags }}{{ range first 3 $p.Params.tags }}<span class="tag">{{ . }}</span>{{ end }}{{ end }}
-              </div>
             </div>
           </div>
         </a>
