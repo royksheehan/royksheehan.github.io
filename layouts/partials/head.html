@@ -6,6 +6,10 @@
 {{- $canonical := .Permalink -}}
 {{- $defaultImage := "images/planilha-para-controle-de-fundos-imobiliarios.png" | absURL -}}
 {{- $image := cond (and $isPage .Params.image) (.Params.image | absURL) $defaultImage -}}
+
+{{- $tags := .Params.tags | default (slice) -}}
+{{- $hasTags := gt (len $tags) 0 -}}
+
 {{- $title := "" -}}
 {{- if $isHome -}}
   {{- $title = printf "%s | Resumos de FIIs e FIAGRO" $siteTitle -}}
@@ -16,6 +20,7 @@
 {{- else -}}
   {{- $title = printf "%s | %s" .Title $siteTitle -}}
 {{- end -}}
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -32,7 +37,7 @@
 <!-- SEO base -->
 <title>{{ $title }}</title>
 <meta name="description" content="{{ $pageDescription }}">
-<meta name="keywords" content="{{ if .Params.tags }}{{ delimit .Params.tags ", " }}{{ else }}{{ .Site.Params.keywords }}{{ end }}">
+<meta name="keywords" content="{{ if $hasTags }}{{ delimit $tags ", " }}{{ else }}{{ .Site.Params.keywords }}{{ end }}">
 <meta name="author" content="{{ .Site.Params.author }}">
 <link rel="canonical" href="{{ $canonical }}">
 
@@ -45,10 +50,17 @@
 <meta property="og:site_name" content="{{ $siteTitle }}">
 <meta property="og:image" content="{{ $image }}">
 <meta property="og:image:alt" content="{{ $title }}">
+
 {{ if $isPage }}
 <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
 <meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
-{{ range .Params.tags }}<meta property="article:tag" content="{{ . }}">{{ end }}
+
+{{ if $hasTags }}
+  {{ range $tags }}
+    <meta property="article:tag" content="{{ . }}">
+  {{ end }}
+{{ end }}
+
 {{ end }}
 
 <!-- Twitter -->
@@ -68,7 +80,7 @@
   "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
   "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
   "mainEntityOfPage": {{ $canonical | jsonify }},
-  "keywords": {{ if .Params.tags }}{{ delimit .Params.tags ", " | jsonify }}{{ else }}{{ .Site.Params.keywords | jsonify }}{{ end }},
+  "keywords": {{ if $hasTags }}{{ delimit $tags ", " | jsonify }}{{ else }}{{ .Site.Params.keywords | jsonify }}{{ end }},
   "author": {
     "@type": "Person",
     "name": {{ .Site.Params.author | jsonify }}
