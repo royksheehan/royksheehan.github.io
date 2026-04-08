@@ -10,6 +10,7 @@
         class="ticker-search-input"
         placeholder="BTLG11, HGLG11, KNCR11..."
         autocomplete="off"
+        aria-label="Buscar fundo por ticker"
       >
       <ul id="ticker-results" class="ticker-results" style="display:none"></ul>
     </div>
@@ -18,7 +19,7 @@
 <!-- Banner afiliado -->
 <div class="sb-section">
   <a href="https://go.hotmart.com/K104781143C" target="_blank" rel="noopener sponsored" class="sidebar-banner">
-    <img src="{{ "images/planilha-para-controle-de-fundos-imobiliarios.png" | absURL }}" alt="Planilha para Controle de Fundos Imobiliários" loading="lazy">
+    <img src="{{ "images/planilha-para-controle-de-fundos-imobiliarios.png" | absURL }}" alt="Planilha para Controle de Fundos Imobiliários" loading="lazy" decoding="async">
   </a>
 </div>
   
@@ -67,65 +68,3 @@
   </div>
 
 </aside>
-
-<script>
-(function () {
-  const baseURL = '{{ .Site.BaseURL }}';
-  const indexURL = baseURL + 'index.json';
-
-  let funds = [];
-
-  fetch(indexURL)
-    .then(r => r.json())
-    .then(data => {
-      const seen = new Set();
-      funds = data.filter(item => {
-        if (!item.ticker || seen.has(item.ticker)) return false;
-        seen.add(item.ticker);
-        return true;
-      }).map(item => ({
-        ticker: item.ticker.toUpperCase(),
-        url: baseURL + 'tickers/' + item.ticker.toLowerCase() + '/'
-      }));
-    })
-    .catch(() => {});
-
-  const input = document.getElementById('ticker-search');
-  const results = document.getElementById('ticker-results');
-
-  if (!input || !results) return;
-
-  input.addEventListener('input', function () {
-    const q = this.value.trim().toLowerCase();
-    results.innerHTML = '';
-
-    if (q.length < 1) {
-      results.style.display = 'none';
-      return;
-    }
-
-    const matches = funds.filter(f =>
-      f.ticker.toLowerCase().includes(q)
-    ).slice(0, 8);
-
-    if (matches.length === 0) {
-      results.style.display = 'none';
-      return;
-    }
-
-    matches.forEach(f => {
-      const li = document.createElement('li');
-      li.innerHTML = '<a href="' + f.url + '"><span class="tr-ticker">' + f.ticker + '</span></a>';
-      results.appendChild(li);
-    });
-
-    results.style.display = 'block';
-  });
-
-  document.addEventListener('click', function (e) {
-    if (!input.contains(e.target) && !results.contains(e.target)) {
-      results.style.display = 'none';
-    }
-  });
-})();
-</script>
