@@ -3,7 +3,6 @@ title: "MANA11: dentro do guidance por 12 meses seguidos — como e até quando"
 date: 2026-03-21
 description: "MANA11 fevereiro/2026: com Selic alta, conflito no Oriente Médio e mercado volátil, o fundo manteve o dividendo — veja o que sustentou o resultado"
 ticker: "MANA11"
-tags: []
 slug: "relatorio-gerencial-mana11-fevereiro-2026"
 ---
 
