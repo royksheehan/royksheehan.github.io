@@ -1,0 +1,29 @@
+{{ define "main" }}
+<div class="container page-body">
+  <section class="posts-wrap">
+    <header class="section-header">
+      <h1 class="section-title">Página não encontrada (404)</h1>
+      <p class="section-desc">O conteúdo pode ter mudado de URL. Use os links abaixo para continuar navegando.</p>
+    </header>
+
+    <div class="posts-list">
+      <a href="{{ .Site.BaseURL }}" class="post-card">
+        <div class="post-num num-tijolo"></div>
+        <div class="post-body">
+          <h2 class="post-title">Ir para a página inicial</h2>
+          <p class="post-excerpt">Veja os relatórios mais recentes e categorias principais.</p>
+        </div>
+      </a>
+
+      <a href="{{ .Site.BaseURL }}posts/" class="post-card">
+        <div class="post-num num-papel"></div>
+        <div class="post-body">
+          <h2 class="post-title">Explorar todos os relatórios</h2>
+          <p class="post-excerpt">Acesse a lista completa de análises por segmento.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+  {{ partial "sidebar.html" . }}
+</div>
+{{ end }}

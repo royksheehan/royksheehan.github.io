@@ -75,3 +75,8 @@ summaryLength = 40
   name   = "Sobre"
   url    = "/sobre/"
   weight = 10
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.7

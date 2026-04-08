@@ -1,5 +1,24 @@
+{{- $isHome := .IsHome -}}
+{{- $isPage := .IsPage -}}
+{{- $siteTitle := .Site.Title -}}
+{{- $defaultDescription := .Site.Params.description -}}
+{{- $pageDescription := .Description | default (.Summary | plainify | strings.TrimSpace | truncate 155) | default $defaultDescription -}}
+{{- $canonical := .Permalink -}}
+{{- $defaultImage := "images/planilha-para-controle-de-fundos-imobiliarios.png" | absURL -}}
+{{- $image := cond (and $isPage .Params.image) (.Params.image | absURL) $defaultImage -}}
+{{- $title := "" -}}
+{{- if $isHome -}}
+  {{- $title = printf "%s | Resumos de FIIs e FIAGRO" $siteTitle -}}
+{{- else if eq .Kind "term" -}}
+  {{- $title = printf "%s: relatórios e análises | %s" .Title $siteTitle -}}
+{{- else if eq .Kind "section" -}}
+  {{- $title = printf "%s | Relatórios gerenciais de FIIs" .Title -}}
+{{- else -}}
+  {{- $title = printf "%s | %s" .Title $siteTitle -}}
+{{- end -}}
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HFJ09VVR00"></script>
@@ -10,49 +29,55 @@
   gtag('config', 'G-HFJ09VVR00');
 </script>
 
-<!-- ── SEO básico ─────────────────────────────────────── -->
-<title>{{ if .IsHome }}{{ .Site.Title }} — Relatórios Gerenciais de FIIs{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
-<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<!-- SEO base -->
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $pageDescription }}">
 <meta name="keywords" content="{{ if .Params.tags }}{{ delimit .Params.tags ", " }}{{ else }}{{ .Site.Params.keywords }}{{ end }}">
 <meta name="author" content="{{ .Site.Params.author }}">
-<link rel="canonical" href="{{ .Permalink }}">
+<link rel="canonical" href="{{ $canonical }}">
 
-<!-- ── Open Graph (LinkedIn, WhatsApp, Facebook) ─────── -->
-<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
-<meta property="og:title" content="{{ .Title }}">
-<meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-<meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:site_name" content="{{ .Site.Title }}">
-{{ if .IsPage }}
+<!-- Open Graph -->
+<meta property="og:locale" content="pt_BR">
+<meta property="og:type" content="{{ if $isPage }}article{{ else }}website{{ end }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $pageDescription }}">
+<meta property="og:url" content="{{ $canonical }}">
+<meta property="og:site_name" content="{{ $siteTitle }}">
+<meta property="og:image" content="{{ $image }}">
+<meta property="og:image:alt" content="{{ $title }}">
+{{ if $isPage }}
 <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
 <meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
 {{ range .Params.tags }}<meta property="article:tag" content="{{ . }}">{{ end }}
 {{ end }}
 
-<!-- ── Twitter Card ───────────────────────────────────── -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="{{ .Title }}">
-<meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $pageDescription }}">
+<meta name="twitter:image" content="{{ $image }}">
 
-<!-- ── Schema.org / JSON-LD ──────────────────────────── -->
-{{ if .IsPage }}
+<!-- Schema.org -->
+{{ if $isPage }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
+  "@type": "BlogPosting",
   "headline": {{ .Title | jsonify }},
-  "description": {{ if .Description }}{{ .Description | jsonify }}{{ else }}{{ .Site.Params.description | jsonify }}{{ end }},
-  "datePublished": "{{ .Date.Format "2006-01-02" }}",
-  "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
+  "description": {{ $pageDescription | jsonify }},
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  "mainEntityOfPage": {{ $canonical | jsonify }},
+  "keywords": {{ delimit .Params.tags ", " | jsonify }},
   "author": {
     "@type": "Person",
     "name": {{ .Site.Params.author | jsonify }}
   },
   "publisher": {
     "@type": "Organization",
-    "name": {{ .Site.Title | jsonify }}
+    "name": {{ $siteTitle | jsonify }}
   },
-  "url": {{ .Permalink | jsonify }}
+  "image": {{ $image | jsonify }}
 }
 </script>
 {{ else }}
@@ -60,19 +85,46 @@
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": {{ .Site.Title | jsonify }},
+  "name": {{ $siteTitle | jsonify }},
   "url": {{ .Site.BaseURL | jsonify }},
-  "description": {{ .Site.Params.description | jsonify }}
+  "description": {{ $defaultDescription | jsonify }}
 }
 </script>
 {{ end }}
 
-<!-- ── RSS ───────────────────────────────────────────── -->
+{{ if not $isHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Início",
+      "item": {{ .Site.BaseURL | jsonify }}
+    }{{ with .CurrentSection }},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ .Title | jsonify }},
+      "item": {{ .Permalink | jsonify }}
+    }{{ end }}{{ if $isPage }},
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": {{ .Title | jsonify }},
+      "item": {{ $canonical | jsonify }}
+    }{{ end }}
+  ]
+}
+</script>
+{{ end }}
+
 {{ range .AlternativeOutputFormats }}
 <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ $.Site.Title }}">
 {{ end }}
 
-<!-- ── Estilos ───────────────────────────────────────── -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet">

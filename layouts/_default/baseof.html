@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-base-url="{{ .Site.BaseURL }}">
 <head>
   {{ partial "head.html" . }}
 </head>
@@ -9,8 +9,8 @@
     {{ block "main" . }}{{ end }}
   </main>
   {{ partial "footer.html" . }}
-  <!-- Pagefind search UI -->
   <link href="{{ "pagefind/pagefind-ui.css" | absURL }}" rel="stylesheet">
-  <script src="{{ "pagefind/pagefind-ui.js" | absURL }}"></script>
+  <script src="{{ "pagefind/pagefind-ui.js" | absURL }}" defer></script>
+  <script src="{{ "js/site.js" | absURL }}" defer></script>
 </body>
 </html>
