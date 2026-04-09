@@ -6,7 +6,7 @@ ticker: "KNSC11"
 slug: "relatorio-gerencial-knsc11-marco-2026"
 ---
 
-O KNSC11, fundo de papel da Kinea focado em CRIs, encerrou março de 2026 entregando um dividendo de **R$ 0,11 por cota**, com um patrimônio líquido de **R$ 1,78 bilhão** e mais de **257 mil cotistas**. A cota de mercado fechou em **R$ 9,04**, acima da cota patrimonial de **R$ 8,79**, indicando um leve ágio.<!more--> O rendimento mensal ficou próximo de **1,20%**, equivalente a cerca de **99% do CDI no período**. Mas afinal, esse nível de rendimento é sustentável nos próximos meses?
+O KNSC11, fundo de papel da Kinea focado em CRIs, encerrou março de 2026 entregando um dividendo de **R$ 0,11 por cota**, com um patrimônio líquido de **R$ 1,78 bilhão** e mais de **257 mil cotistas**. A cota de mercado fechou em **R$ 9,04**, acima da cota patrimonial de **R$ 8,79**, indicando um leve ágio.<!--more--> O rendimento mensal ficou próximo de **1,20%**, equivalente a cerca de **99% do CDI no período**. Mas afinal, esse nível de rendimento é sustentável nos próximos meses?
 
 ---
 
