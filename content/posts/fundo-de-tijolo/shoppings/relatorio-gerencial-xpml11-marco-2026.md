@@ -6,7 +6,7 @@ ticker: "xpml11"
 slug: "relatorio-gerencial-xpml11-marco-2026"
 ---
 
-O XPML11, um dos maiores FIIs de shopping do Brasil, divulgou seu relatório de março de 2026 trazendo números que chamam atenção do investidor. O fundo distribuiu **R$ 0,92 por cota**, manteve uma base robusta com **mais de 723 mil cotistas** e encerrou o mês com cota a **R$ 108,09**, próximo do seu valor patrimonial.<!-- more --> Mesmo em um cenário macroeconômico desafiador, o portfólio mostrou resiliência operacional e crescimento em indicadores importantes como vendas e NOI. Mas será que esse desempenho é sustentável para os próximos meses?
+O XPML11, um dos maiores FIIs de shopping do Brasil, divulgou seu relatório de março de 2026 trazendo números que chamam atenção do investidor. O fundo distribuiu **R$ 0,92 por cota**, manteve uma base robusta com **mais de 723 mil cotistas** e encerrou o mês com cota a **R$ 108,09**, próximo do seu valor patrimonial.<!--more--> Mesmo em um cenário macroeconômico desafiador, o portfólio mostrou resiliência operacional e crescimento em indicadores importantes como vendas e NOI. Mas será que esse desempenho é sustentável para os próximos meses?
 
 ---
 
