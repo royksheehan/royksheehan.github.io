@@ -60,7 +60,7 @@ A relação Dívida / Patrimônio Líquido é de **15,9%**, considerada controla
 
 ---
 
-### 3-A. INDICADORES OPERACIONAIS (SHOPPINGS)
+### 3-A. INDICADORES OPERACIONAIS
 
 **OCUPAÇÃO E VACÂNCIA:**
 - **Vacância Média do Portfólio:** **4,6%** em fevereiro/26.
