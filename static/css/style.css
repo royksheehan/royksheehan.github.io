@@ -19,7 +19,7 @@
 
 html { scroll-behavior: smooth; }
 body { font-family: var(--sans); background: var(--bg); color: var(--text); font-size: 18px; line-height: 1.75; }
-a { color: inherit; text-decoration: none; }
+a { color: inherit; text-decoration: underline; }
 img { max-width: 100%; display: block; }
 
 /* ── Utilities ────────────────────────────────────────── */
