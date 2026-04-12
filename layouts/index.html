@@ -18,7 +18,7 @@
       <h1 class="hero-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
       <p class="hero-excerpt">{{ .Summary }}</p>
       <div class="hero-meta">
-        <span class="hero-date">{{ .Date.Format "02 Jan 2006" }}</span>
+        <span class="hero-date">{{ .Date.Format "02/01/2006" }}</span>
         {{ with .CurrentSection.Parent }}
           <a href="{{ .RelPermalink }}" class="hero-cat">{{ .Title }}</a>
         {{ end }}
