@@ -577,5 +577,7 @@ a.post-card .post-title {
 
 /* ── Meus ───────────────────────────────────── */
 .a-tickers {
+  color: inherit;
+  font-weight: bold;
   text-decoration: underline;
 }
