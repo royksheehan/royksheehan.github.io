@@ -6,13 +6,13 @@ ticker: "hgbs11"
 slug: "relatorio-gerencial-hgbs11-marco-2026"
 ---
 
-O Hedge Brasil Shopping FII (HGBS11) acaba de divulgar seu relatório gerencial de março de 2026, e os números mostram um mês de intensa movimentação na carteira. Estamos falando de um gigante com valor de mercado de **R$ 2,6 bilhões**, **174 mil cotistas** e uma cota negociada a **R$ 20,44**, ligeiramente abaixo do seu valor patrimonial de **R$ 20,69**.<!--more--> O Fundo anunciou rendimentos de **R$ 0,170 por cota**, mas o que realmente chama a atenção são as alienações milionárias em andamento e o início de uma nova emissão de cotas bilionária. Será que essas movimentações vão turbinar os dividendos ou representam um reposicionamento de risco? Fique comigo até o final para entender os detalhes e os impactos no seu bolso.
+O Hedge Brasil Shopping FII <a href="https://fiidireto.online/tickers/hgbs11/">(HGBS11)</a> acaba de divulgar seu relatório gerencial de março de 2026, e os números mostram um mês de intensa movimentação na carteira. Estamos falando de um gigante com valor de mercado de **R$ 2,6 bilhões**, **174 mil cotistas** e uma cota negociada a **R$ 20,44**, ligeiramente abaixo do seu valor patrimonial de **R$ 20,69**.<!--more--> O Fundo anunciou rendimentos de **R$ 0,170 por cota**, mas o que realmente chama a atenção são as alienações milionárias em andamento e o início de uma nova emissão de cotas bilionária. Será que essas movimentações vão turbinar os dividendos ou representam um reposicionamento de risco? Fique comigo até o final para entender os detalhes e os impactos no seu bolso.
 
 ---
 
 ### 1. DADOS DA COTA
 
-No fechamento de março de 2026, a cota patrimonial do HGBS11 era de **R$ 20,69**, enquanto a cota de mercado estava em **R$ 20,44**. Isso representa um **deságio de aproximadamente 1,2%** .
+No fechamento de março de 2026, a cota patrimonial do <a href="https://fiidireto.online/tickers/hgbs11/">HGBS11</a> era de **R$ 20,69**, enquanto a cota de mercado estava em **R$ 20,44**. Isso representa um **deságio de aproximadamente 1,2%** .
 
 **O que isso significa na prática?**
 - **Para quem já é cotista:** O mercado está avaliando o Fundo um pouco abaixo do seu valor contábil. Isso pode ser reflexo de uma assimetria de informação ou de um momento de mercado para FIIs de tijolo, mas não indica necessariamente um problema estrutural, visto que o Fundo está gerando lucro e reciclando ativos com ágio.
@@ -39,7 +39,7 @@ O resultado do mês foi de R$ 0,164 por cota, mas a distribuição foi de R$ 0,1
 
 ### 3. COMPOSIÇÃO DA CARTEIRA
 
-O HGBS11 é um Fundo de Tijolo focado em **Shopping Centers**.
+O <a href="https://fiidireto.online/tickers/hgbs11/">HGBS11</a> é um <a href="https://fiidireto.online/posts/fundo-de-tijolo/">Fundo de Tijolo</a> focado em **Shopping Centers**.
 
 - **Alocação Estratégica:** **96,4%** em Ativos Estratégicos (Shoppings e FIIs de Shoppings).
 - **Alocação Tática/Liquidez:** **3,2%** entre CRIs, LCIs e FIIs Líquidos.
@@ -97,7 +97,7 @@ Março foi um mês de intensa reciclagem de portfólio com três grandes movimen
 1.  **ALIENAÇÃO DE 19% DO SHOPPING JARDIM SUL:**
     - **Valor:** R$ 128 milhões.
     - **Cap Rate:** **7,7%** .
-    - **Impacto:** Geração de lucro não recorrente de **R$ 0,12 por cota**. O HGBS11 permanecerá como controlador com **61%** do ativo. A venda foi feita com ágio de **16,9%** sobre o laudo de avaliação.
+    - **Impacto:** Geração de lucro não recorrente de **R$ 0,12 por cota**. O <a href="https://fiidireto.online/tickers/hgbs11/">HGBS11</a> permanecerá como controlador com **61%** do ativo. A venda foi feita com ágio de **16,9%** sobre o laudo de avaliação.
     - **Sinalização:** ✅ **Positivo.** Realização de lucro e redução da concentração da carteira (de 18% para 13% do PL) a um preço excelente.
 
 2.  **ALIENAÇÃO DE 18,375% DO I FASHION OUTLET:**
@@ -115,7 +115,7 @@ Março foi um mês de intensa reciclagem de portfólio com três grandes movimen
 
 ### 5. ATUALIZAÇÕES DE CRÉDITO / RISCOS
 
-- **Mercado de Shoppings:** O relatório da ABRASCE aponta retração de **2,7% nas vendas nominais** do setor em fevereiro vs. 2025. Apesar disso, a carteira do HGBS11 performou **acima da média do mercado**, entregando crescimento positivo.
+- **Mercado de Shoppings:** O relatório da ABRASCE aponta retração de **2,7% nas vendas nominais** do setor em fevereiro vs. 2025. Apesar disso, a carteira do <a href="https://fiidireto.online/tickers/hgbs11/">HGBS11</a> performou **acima da média do mercado**, entregando crescimento positivo.
 - **Riscos de Execução:** As alienações do Jardim Sul e IFONH dependem de condições precedentes usuais (assinatura final de contratos).
 - **Sinalização:** ⚠️ **Atenção.** O cenário macroeconômico de vendas do varejo físico está desafiador, o que reforça a importância da gestão ativa do Fundo na seleção e reciclagem de ativos.
 
@@ -132,7 +132,7 @@ Março foi um mês de intensa reciclagem de portfólio com três grandes movimen
 
 ### 7. CONCLUSÃO
 
-O relatório de março do HGBS11 mostra um Fundo que está **sabendo navegar o cenário macro desafiador através de uma gestão ativa de portfólio**. O grande destaque do mês não está apenas no dividendo de R$ 0,17, mas na **realização de lucros bilionários com a venda de fatias de shoppings**. O lucro de **R$ 0,37 por cota** do IFONH e os **R$ 0,12 por cota** do Jardim Sul são uma demonstração clara de que o valor patrimonial do Fundo muitas vezes esconde reservas significativas de valor.
+O relatório de março do <a href="https://fiidireto.online/tickers/hgbs11/">HGBS11</a> mostra um Fundo que está **sabendo navegar o cenário macro desafiador através de uma gestão ativa de portfólio**. O grande destaque do mês não está apenas no dividendo de R$ 0,17, mas na **realização de lucros bilionários com a venda de fatias de shoppings**. O lucro de **R$ 0,37 por cota** do IFONH e os **R$ 0,12 por cota** do Jardim Sul são uma demonstração clara de que o valor patrimonial do Fundo muitas vezes esconde reservas significativas de valor.
 
 **Pontos de Atenção para o Investidor:**
 1.  **Curto Prazo:** Os lucros das vendas serão adicionados ao resultado caixa, o que pode **turbinar os dividendos** nos próximos semestres conforme as parcelas forem recebidas.
