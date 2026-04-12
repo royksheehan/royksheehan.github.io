@@ -6,13 +6,13 @@ ticker: "TRXF11"
 slug: "relatorio-gerencial-trxf11-marco-2026"
 ---
 
-O TRXF11 entregou mais um mês de rendimento consistente em março de 2026, com **R$ 0,93 por cota**, mantendo um **Dividend Yield mensal de 1,01% (12,15% anualizado)**. A cota de mercado fechou em **R$ 91,83**, enquanto o valor patrimonial está em **R$ 99,98**, indicando um desconto relevante.<!--more--> O fundo já conta com **270.233 cotistas**, reforçando sua popularidade entre investidores de renda. Mas com esse desconto e novas aquisições relevantes, será que o fundo ainda tem espaço para crescer com segurança?
+O <a href="https://fiidireto.online/tickers/trxf11/">TRXF11</a> entregou mais um mês de rendimento consistente em março de 2026, com **R$ 0,93 por cota**, mantendo um **Dividend Yield mensal de 1,01% (12,15% anualizado)**. A cota de mercado fechou em **R$ 91,83**, enquanto o valor patrimonial está em **R$ 99,98**, indicando um desconto relevante.<!--more--> O fundo já conta com **270.233 cotistas**, reforçando sua popularidade entre investidores de renda. Mas com esse desconto e novas aquisições relevantes, será que o fundo ainda tem espaço para crescer com segurança?
 
 ---
 
 ## 1. DADOS DA COTA
 
-O TRXF11 apresenta atualmente uma diferença relevante entre valor patrimonial e valor de mercado:
+O <a href="https://fiidireto.online/tickers/trxf11/">TRXF11</a> apresenta atualmente uma diferença relevante entre valor patrimonial e valor de mercado:
 
 - **Cota patrimonial:** R$ 99,98  
 - **Cota de mercado:** R$ 91,83  
@@ -54,7 +54,7 @@ Além disso, o fundo mantém um **guidance de distribuição entre R$ 0,90 e R$ 
 
 ## 3. COMPOSIÇÃO DA CARTEIRA
 
-O TRXF11 possui uma carteira diversificada, com predominância de imóveis de renda urbana.
+O <a href="https://fiidireto.online/tickers/trxf11/">TRXF11</a> possui uma carteira diversificada, com predominância de imóveis de renda urbana.
 
 ### Alocação por tipo de ativo:
 
@@ -158,7 +158,7 @@ O mês de março foi marcado por maior volatilidade nos mercados:
 
 O cenário foi impactado por fatores externos, como tensões geopolíticas e pressão inflacionária global.
 
-Para o TRXF11:
+Para o <a href="https://fiidireto.online/tickers/trxf11/">TRXF11</a>:
 
 - Curto prazo: impacto negativo nas cotações  
 - Médio/longo prazo: cenário ainda favorável para FIIs, principalmente com possível ciclo de queda de juros  
@@ -180,7 +180,7 @@ O fundo possui uma das maiores liquidez do mercado de FIIs, o que facilita a ent
 
 ## 8. CONCLUSÃO
 
-O TRXF11 segue como um fundo sólido dentro do segmento híbrido, com destaque para:
+O <a href="https://fiidireto.online/tickers/trxf11/">TRXF11</a> segue como um fundo sólido dentro do segmento híbrido, com destaque para:
 
 - Dividendos consistentes e previsíveis  
 - Portfólio diversificado com contratos longos  
