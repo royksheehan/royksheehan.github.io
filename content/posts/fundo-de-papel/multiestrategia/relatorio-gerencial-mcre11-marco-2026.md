@@ -6,13 +6,13 @@ ticker: "MCRE11"
 slug: "relatorio-gerencial-mcre11-marco-2026"
 ---
 
-O <a href="https://fiidireto.online/tickers/mcre11/">MCRE11</a> apresentou mais um mês consistente em março de 2026, mantendo sua proposta de renda estável com distribuição de **R$ 0,11 por cota**, equivalente a um **Dividend Yield anualizado de 14,7%**.<!--more--> A cota segue sendo negociada com desconto, em **R$ 9,55**, abaixo do valor patrimonial de **R$ 10,41**, e o fundo já conta com mais de **90 mil cotistas**. Além disso, o mês foi marcado por um resultado extraordinário relevante vindo de reestruturação de ativos. Mas será que esse rendimento é sustentável nos próximos meses?
+O <a href="https://fiidireto.online/tickers/mcre11/" class="a-tickers">MCRE11</a> apresentou mais um mês consistente em março de 2026, mantendo sua proposta de renda estável com distribuição de **R$ 0,11 por cota**, equivalente a um **Dividend Yield anualizado de 14,7%**.<!--more--> A cota segue sendo negociada com desconto, em **R$ 9,55**, abaixo do valor patrimonial de **R$ 10,41**, e o fundo já conta com mais de **90 mil cotistas**. Além disso, o mês foi marcado por um resultado extraordinário relevante vindo de reestruturação de ativos. Mas será que esse rendimento é sustentável nos próximos meses?
 
 ---
 
 ## 1. DADOS DA COTA
 
-O <a href="https://fiidireto.online/tickers/mcre11/">MCRE11</a> encerrou o mês com:
+O <a href="https://fiidireto.online/tickers/mcre11/" class="a-tickers">MCRE11</a> encerrou o mês com:
 
 - **Valor patrimonial:** R$ 10,41  
 - **Valor de mercado:** R$ 9,55  
@@ -53,7 +53,7 @@ Apesar do resultado forte, parte relevante veio de ganho não recorrente. A gest
 
 ## 3. COMPOSIÇÃO DA CARTEIRA
 
-O <a href="https://fiidireto.online/tickers/mcre11/">MCRE11</a> é um FII **<a href="https://fiidireto.online/posts/fundo-de-papel/multiestrategia/">multiestratégia</a>**, com forte presença em crédito, mas também com exposição relevante a ganho de capital.
+O <a href="https://fiidireto.online/tickers/mcre11/" class="a-tickers">MCRE11</a> é um FII **<a href="https://fiidireto.online/posts/fundo-de-papel/multiestrategia/">multiestratégia</a>**, com forte presença em crédito, mas também com exposição relevante a ganho de capital.
 
 ### Alocação por classe:
 
@@ -181,7 +181,7 @@ Esse nível de liquidez é considerado **bom** para o tamanho do fundo, permitin
 
 ## 8. CONCLUSÃO
 
-O <a href="https://fiidireto.online/tickers/mcre11/">MCRE11</a> entregou um mês sólido, com destaque para três pontos principais:
+O <a href="https://fiidireto.online/tickers/mcre11/" class="a-tickers">MCRE11</a> entregou um mês sólido, com destaque para três pontos principais:
 
 1. **Dividendos elevados e estáveis**, dentro da faixa projetada pela gestão  
 2. **Ganho extraordinário relevante**, impulsionando o resultado do período  
