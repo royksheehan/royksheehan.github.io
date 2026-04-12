@@ -6,7 +6,7 @@ ticker: "TGAR11"
 slug: "relatorio-gerencial-tgar11-fev-2026"
 ---
 
-O <a href="https://fiidireto.online/tickers/tgar11/">TGAR11</a>, um fundo imobiliário multiestratégia com forte atuação em equity e desenvolvimento imobiliário, divulgou seus resultados de fevereiro de 2026 trazendo números que chamam atenção. O fundo distribuiu **R$ 0,72 por cota**, com um **Dividend Yield mensal de 0,90%**, equivalente a **11,33% anualizado**.<!--more--> Além disso, o fundo segue negociando com uma diferença relevante entre preço de mercado (**R$ 80,11**) e valor patrimonial (**R$ 110,15**), e conta com uma base de **147.891 cotistas**.
+O <a href="https://fiidireto.online/tickers/tgar11/" class="a-tickers">TGAR11</a>, um fundo imobiliário multiestratégia com forte atuação em equity e desenvolvimento imobiliário, divulgou seus resultados de fevereiro de 2026 trazendo números que chamam atenção. O fundo distribuiu **R$ 0,72 por cota**, com um **Dividend Yield mensal de 0,90%**, equivalente a **11,33% anualizado**.<!--more--> Além disso, o fundo segue negociando com uma diferença relevante entre preço de mercado (**R$ 80,11**) e valor patrimonial (**R$ 110,15**), e conta com uma base de **147.891 cotistas**.
 
 Mas será que esse desconto elevado é uma oportunidade ou um sinal de risco estrutural no fundo?
 
@@ -14,7 +14,7 @@ Mas será que esse desconto elevado é uma oportunidade ou um sinal de risco est
 
 ## 1. DADOS DA COTA
 
-O <a href="https://fiidireto.online/tickers/tgar11/">TGAR11</a> encerrou fevereiro com:
+O <a href="https://fiidireto.online/tickers/tgar11/" class="a-tickers">TGAR11</a> encerrou fevereiro com:
 
 * **Cota de mercado:** R$ 80,11
 * **Cota patrimonial:** R$ 110,15
@@ -54,7 +54,7 @@ A gestão projeta rendimentos entre **R$ 0,70 e R$ 1,00 por cota** no primeiro s
 
 ## 3. COMPOSIÇÃO DA CARTEIRA
 
-O <a href="https://fiidireto.online/tickers/tgar11/">TGAR11</a> possui um portfólio altamente diversificado, com **174 ativos distribuídos em 20 estados e 104 municípios**.
+O <a href="https://fiidireto.online/tickers/tgar11/" class="a-tickers">TGAR11</a> possui um portfólio altamente diversificado, com **174 ativos distribuídos em 20 estados e 104 municípios**.
 
 ### Alocação por classe de ativos:
 
@@ -178,7 +178,7 @@ O fundo apresentou:
 
 Apesar da leve queda no número de investidores, o fundo mantém uma **boa liquidez**, adequada para seu tamanho.
 
-Além disso, o <a href="https://fiidireto.online/tickers/tgar11/">TGAR11</a> faz parte de índices importantes como:
+Além disso, o <a href="https://fiidireto.online/tickers/tgar11/" class="a-tickers">TGAR11</a> faz parte de índices importantes como:
 
 * IFIX
 * XPFT
@@ -191,7 +191,7 @@ Além disso, o <a href="https://fiidireto.online/tickers/tgar11/">TGAR11</a> faz
 
 ## 8. CONCLUSÃO
 
-O <a href="https://fiidireto.online/tickers/tgar11/">TGAR11</a> segue entregando um nível de rendimento atrativo, com **DY de 14,01% nos últimos 12 meses**, sustentado principalmente pela sua forte exposição ao equity imobiliário. O mês de fevereiro trouxe bons sinais operacionais, especialmente no volume de vendas e na gestão ativa do portfólio.
+O <a href="https://fiidireto.online/tickers/tgar11/" class="a-tickers">TGAR11</a> segue entregando um nível de rendimento atrativo, com **DY de 14,01% nos últimos 12 meses**, sustentado principalmente pela sua forte exposição ao equity imobiliário. O mês de fevereiro trouxe bons sinais operacionais, especialmente no volume de vendas e na gestão ativa do portfólio.
 
 Os principais pontos de atenção continuam sendo:
 
