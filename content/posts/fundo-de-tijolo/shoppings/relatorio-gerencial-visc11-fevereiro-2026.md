@@ -6,11 +6,11 @@ ticker: "visc11"
 slug: "relatorio-gerencial-visc11-fevereiro-2026"
 ---
 
-O **VISC11**, o **Vinci Shopping Centers**, encerrou fevereiro de 2026 distribuindo R$ 0,84 por cota — um aumento em relação ao patamar anterior de R$ 0,81, em linha com o aumento de guidance anunciado pela gestão.<!--more--> A cota de mercado fechou o mês em R$ 112,36, enquanto o valor patrimonial estava em R$ 118,07, configurando um deságio de cerca de 4,8%. O retorno total bruto do fundo em fevereiro foi de 4,4%, superando o IFIX em 3,1 pontos percentuais no mês. Mas o fundo gerou R$ 0,92 por cota e distribuiu apenas R$ 0,84 — e ainda carrega R$ 1,56 de resultado acumulado não distribuído. O que explica essa diferença, e o que ela significa para quem está investido?
+O **<a href="https://fiidireto.online/tickers/visc11/">VISC11</a>**, o **Vinci Shopping Centers**, encerrou fevereiro de 2026 distribuindo R$ 0,84 por cota — um aumento em relação ao patamar anterior de R$ 0,81, em linha com o aumento de guidance anunciado pela gestão.<!--more--> A cota de mercado fechou o mês em R$ 112,36, enquanto o valor patrimonial estava em R$ 118,07, configurando um deságio de cerca de 4,8%. O retorno total bruto do fundo em fevereiro foi de 4,4%, superando o IFIX em 3,1 pontos percentuais no mês. Mas o fundo gerou R$ 0,92 por cota e distribuiu apenas R$ 0,84 — e ainda carrega R$ 1,56 de resultado acumulado não distribuído. O que explica essa diferença, e o que ela significa para quem está investido?
 
 ## APRESENTAÇÃO DO FUNDO
 
-O fundo se chama **Vinci Shopping Centers FII**, negocia sob o ticker **VISC11** e é gerido pela **Vinci Real Estate Gestora de Recursos Ltda**., com administração e escrituração pela **BRL Trust Distribuidora de Títulos e Valores Mobiliários S.A.** Foi fundado em março de 2014, tem prazo indeterminado e é voltado para investidores em geral. É classificado pela Anbima como FII Renda Gestão Ativa com foco em shopping centers.
+O fundo se chama **Vinci Shopping Centers FII**, negocia sob o ticker **<a href="https://fiidireto.online/tickers/visc11/">VISC11</a>** e é gerido pela **Vinci Real Estate Gestora de Recursos Ltda**., com administração e escrituração pela **BRL Trust Distribuidora de Títulos e Valores Mobiliários S.A.** Foi fundado em março de 2014, tem prazo indeterminado e é voltado para investidores em geral. É classificado pela Anbima como FII Renda Gestão Ativa com foco em shopping centers.
 
 O patrimônio líquido consolidado do fundo ao final de fevereiro era de R$ 3,4 bilhões, com 341.753 cotistas e valor de mercado de aproximadamente R$ 3,3 bilhões. A taxa de administração é escalonada: 1,35% ao ano sobre o valor de mercado até R$ 1 bilhão, 1,20% sobre o que exceder R$ 1 bilhão até R$ 2 bilhões, e 1,05% sobre o que exceder R$ 2 bilhões. Não há taxa de performance.
 
@@ -24,7 +24,7 @@ Para quem compra no mercado secundário, esse deságio significa que você está
 
 ## DIVIDENDOS (PONTO POSITIVO ✅)
 
-Em fevereiro, o VISC11 distribuiu R$ 0,84 por cota — um aumento em relação aos R$ 0,81 praticados nos meses anteriores. O resultado gerado no mês foi de R$ 0,92 por cota, acima da distribuição.
+Em fevereiro, o <a href="https://fiidireto.online/tickers/visc11/">VISC11</a> distribuiu R$ 0,84 por cota — um aumento em relação aos R$ 0,81 praticados nos meses anteriores. O resultado gerado no mês foi de R$ 0,92 por cota, acima da distribuição.
 
 O guidance atualizado da gestão aponta para uma distribuição entre R$ 0,84 e R$ 0,90 por cota até dezembro de 2026. Com a cota de mercado em R$ 112,36, o DY mensal implícito de R$ 0,84 equivale a cerca de 0,75% ao mês, ou aproximadamente 9% ao ano — o que fica abaixo do CDI bruto atual de 15% ao ano, mas em linha com o que se espera de fundos de tijolo de qualidade em ambiente de juros altos.
 
@@ -34,7 +34,7 @@ Um ponto importante: o fundo encerrou o mês com R$ 1,56 por cota de resultado a
 
 ## COMPOSIÇÃO DA CARTEIRA (PONTO POSITIVO ✅)
 
-O portfólio do VISC11 é composto por participações em 30 shoppings distribuídos em 15 estados e no Distrito Federal, administrados por 11 administradoras distintas, totalizando 296 mil m² de ABL própria. São Paulo lidera com 31% do NOI, seguido por Rio de Janeiro com 11% e Ceará com 10%, mostrando uma boa distribuição geográfica com presença relevante fora do eixo principal.
+O portfólio do <a href="https://fiidireto.online/tickers/visc11/">VISC11</a> é composto por participações em 30 shoppings distribuídos em 15 estados e no Distrito Federal, administrados por 11 administradoras distintas, totalizando 296 mil m² de ABL própria. São Paulo lidera com 31% do NOI, seguido por Rio de Janeiro com 11% e Ceará com 10%, mostrando uma boa distribuição geográfica com presença relevante fora do eixo principal.
 
 Os cinco maiores ativos por contribuição ao NOI são Prudenshopping (12%), Porto Velho Shopping (8%), Shopping Praia da Costa e Campinas Shopping (7% cada) e Shopping Paralela e Granja Vianna (6% cada). Nenhum ativo isolado domina o portfólio de forma preocupante.
 
@@ -80,7 +80,7 @@ O volume médio diário de negociação das cotas na B3 em fevereiro foi de R$ 6
 
 ## CONCLUSÃO
 
-Fevereiro foi um mês positivo para o VISC11 em vários aspectos: o resultado gerado de R$ 0,92 por cota ficou acima da distribuição, o guidance foi elevado para R$ 0,84 a R$ 0,90, os indicadores operacionais mostraram crescimento real nas vendas e NOI, e a cota de mercado avançou 3,6%, entregando um retorno total de 4,4% no mês.
+Fevereiro foi um mês positivo para o <a href="https://fiidireto.online/tickers/visc11/">VISC11</a> em vários aspectos: o resultado gerado de R$ 0,92 por cota ficou acima da distribuição, o guidance foi elevado para R$ 0,84 a R$ 0,90, os indicadores operacionais mostraram crescimento real nas vendas e NOI, e a cota de mercado avançou 3,6%, entregando um retorno total de 4,4% no mês.
 
 Os três pontos mais importantes para o investidor monitorar nos próximos meses são: primeiro, o cronograma de desembolsos de 2026 — o fundo tem obrigações relevantes no segundo semestre, incluindo parcelas das aquisições do Shopping Paralela e do Midway Mall, e a gestão está ativamente buscando formas de gerar liquidez adicional; segundo, a evolução da inadimplência após o pico sazonal de janeiro, para confirmar se o retorno ao patamar histórico de 1% a 3% acontecerá conforme esperado; e terceiro, o ritmo de cortes da Selic, que é o principal catalisador externo para a valorização das cotas de fundos de shopping no mercado secundário ao longo de 2026.
 
