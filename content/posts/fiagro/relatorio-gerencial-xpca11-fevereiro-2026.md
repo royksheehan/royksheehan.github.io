@@ -6,7 +6,7 @@ ticker: "XPCA11"
 slug: "relatorio-gerencial-xpca11-fevereiro-2026"
 ---
 
-O XPCA11 entregou em fevereiro de 2026 um dividendo de **R$ 0,12 por cota**, com **yield mensal de 1,59%** e um yield anualizado de **20,56%**. O fundo segue com um patrimônio de aproximadamente **R$ 443,4 milhões**, mais de **94 mil cotistas** e cotas negociadas com desconto relevante em relação ao valor patrimonial de **R$ 9,74**.<!--more--> Além disso, manteve uma boa liquidez média diária de **R$ 1,13 milhão**. Mas com cenário macro mais desafiador e sinais de risco no agro, será que esse rendimento é sustentável?
+O <a href="https://fiidireto.online/tickers/xpca11/" class="a-tickers">XPCA11</a> entregou em fevereiro de 2026 um dividendo de **R$ 0,12 por cota**, com **yield mensal de 1,59%** e um yield anualizado de **20,56%**. O fundo segue com um patrimônio de aproximadamente **R$ 443,4 milhões**, mais de **94 mil cotistas** e cotas negociadas com desconto relevante em relação ao valor patrimonial de **R$ 9,74**.<!--more--> Além disso, manteve uma boa liquidez média diária de **R$ 1,13 milhão**. Mas com cenário macro mais desafiador e sinais de risco no agro, será que esse rendimento é sustentável?
 
 ---
 
@@ -44,7 +44,7 @@ O resultado contábil foi de **R$ 0,1634 por cota**, acima da distribuição, in
 
 ## 3. COMPOSIÇÃO DA CARTEIRA
 
-A carteira do XPCA11 segue com forte foco em crédito:
+A carteira do <a href="https://fiidireto.online/tickers/xpca11/" class="a-tickers">XPCA11</a> segue com forte foco em crédito:
 
 - **72,7% em CRA**
 - **22,0% em FIDC Agro**
@@ -145,7 +145,7 @@ Para o tamanho do fundo, essa liquidez é considerada adequada, permitindo entra
 
 ## 8. CONCLUSÃO
 
-O XPCA11 apresentou um mês sólido em fevereiro de 2026, com destaque para:
+O <a href="https://fiidireto.online/tickers/xpca11/" class="a-tickers">XPCA11</a> apresentou um mês sólido em fevereiro de 2026, com destaque para:
 
 - **Dividendos consistentes e bem cobertos pelo resultado**
 - **Carteira diversificada e majoritariamente indexada ao CDI**
