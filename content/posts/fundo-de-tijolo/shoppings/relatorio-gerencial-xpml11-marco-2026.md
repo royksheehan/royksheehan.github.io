@@ -6,13 +6,13 @@ ticker: "xpml11"
 slug: "relatorio-gerencial-xpml11-marco-2026"
 ---
 
-O <a href="https://fiidireto.online/tickers/xpml11/">XPML11</a>, um dos maiores FIIs de shopping do Brasil, divulgou seu relatório de março de 2026 trazendo números que chamam atenção do investidor. O fundo distribuiu **R$ 0,92 por cota**, manteve uma base robusta com **mais de 723 mil cotistas** e encerrou o mês com cota a **R$ 108,09**, próximo do seu valor patrimonial.<!--more--> Mesmo em um cenário macroeconômico desafiador, o portfólio mostrou resiliência operacional e crescimento em indicadores importantes como vendas e NOI. Mas será que esse desempenho é sustentável para os próximos meses?
+O <a href="https://fiidireto.online/tickers/xpml11/" class="a-tickers">XPML11</a>, um dos maiores FIIs de shopping do Brasil, divulgou seu relatório de março de 2026 trazendo números que chamam atenção do investidor. O fundo distribuiu **R$ 0,92 por cota**, manteve uma base robusta com **mais de 723 mil cotistas** e encerrou o mês com cota a **R$ 108,09**, próximo do seu valor patrimonial.<!--more--> Mesmo em um cenário macroeconômico desafiador, o portfólio mostrou resiliência operacional e crescimento em indicadores importantes como vendas e NOI. Mas será que esse desempenho é sustentável para os próximos meses?
 
 ---
 
 ## 1. DADOS DA COTA
 
-A cota de mercado do <a href="https://fiidireto.online/tickers/xpml11/">XPML11</a> encerrou março de 2026 em **R$ 108,09**. Já o patrimônio líquido total do fundo é de aproximadamente **R$ 6,47 bilhões**, com mais de **58,5 milhões de cotas emitidas**.
+A cota de mercado do <a href="https://fiidireto.online/tickers/xpml11/" class="a-tickers">XPML11</a> encerrou março de 2026 em **R$ 108,09**. Já o patrimônio líquido total do fundo é de aproximadamente **R$ 6,47 bilhões**, com mais de **58,5 milhões de cotas emitidas**.
 
 Isso sugere que o fundo está sendo negociado **próximo do valor patrimonial**, sem distorções relevantes de preço.
 
@@ -48,7 +48,7 @@ Apesar do cenário macro mais fraco, o fundo conseguiu manter a distribuição e
 
 ## 3. COMPOSIÇÃO DA CARTEIRA
 
-O <a href="https://fiidireto.online/tickers/xpml11/">XPML11</a> possui uma carteira altamente concentrada em ativos reais:
+O <a href="https://fiidireto.online/tickers/xpml11/" class="a-tickers">XPML11</a> possui uma carteira altamente concentrada em ativos reais:
 
 - **93,7% em imóveis (shopping centers)**  
 - 3,4% em caixa  
@@ -234,7 +234,7 @@ Liquidez alta e adequada para o tamanho do fundo.
 
 ## 8. CONCLUSÃO
 
-O <a href="https://fiidireto.online/tickers/xpml11/">XPML11</a> entregou mais um mês sólido, com destaque para três pontos principais:
+O <a href="https://fiidireto.online/tickers/xpml11/" class="a-tickers">XPML11</a> entregou mais um mês sólido, com destaque para três pontos principais:
 
 1. **Dividendos estáveis em R$ 0,92**, sustentados por resultado operacional e reservas  
 2. **Crescimento operacional consistente**, com alta em vendas, NOI e aluguéis  
