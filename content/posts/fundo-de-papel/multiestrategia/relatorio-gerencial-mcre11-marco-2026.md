@@ -1,7 +1,7 @@
 ---
-title: "GAME11: por que a gestora está trocando IPCA por prefixados?"
+title: "MCRE11: lucro de R$0,24 e reserva alta — dividendos seguem firmes?"
 date: 2026-04-10
-description: "GAME11 fez uma aposta ousada em prefixados com a Selic em 15%. E agora, o que esperar?"
+description: "MCRE11 distribui R$0,11 por cota e acumula reservas — estratégia garante estabilidade futura?"
 ticker: "MCRE11"
 slug: "relatorio-gerencial-mcre11-marco-2026"
 ---
