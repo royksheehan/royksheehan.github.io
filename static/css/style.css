@@ -581,3 +581,7 @@ a.post-card .post-title {
   font-weight: bold;
   text-decoration: underline;
 }
+
+.a-tickers:hover {
+  color: var(--gold);
+}
