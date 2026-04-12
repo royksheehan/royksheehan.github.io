@@ -6,7 +6,7 @@ ticker: "KNSC11"
 slug: "relatorio-gerencial-knsc11-marco-2026"
 ---
 
-O KNSC11, fundo de papel da Kinea focado em CRIs, encerrou março de 2026 entregando um dividendo de **R$ 0,11 por cota**, com um patrimônio líquido de **R$ 1,78 bilhão** e mais de **257 mil cotistas**. A cota de mercado fechou em **R$ 9,04**, acima da cota patrimonial de **R$ 8,79**, indicando um leve ágio.<!--more--> O rendimento mensal ficou próximo de **1,20%**, equivalente a cerca de **99% do CDI no período**. Mas afinal, esse nível de rendimento é sustentável nos próximos meses?
+O <a href="https://fiidireto.online/tickers/knsc11/" class="a-tickers">KNSC11</a>, fundo de papel da Kinea focado em CRIs, encerrou março de 2026 entregando um dividendo de **R$ 0,11 por cota**, com um patrimônio líquido de **R$ 1,78 bilhão** e mais de **257 mil cotistas**. A cota de mercado fechou em **R$ 9,04**, acima da cota patrimonial de **R$ 8,79**, indicando um leve ágio.<!--more--> O rendimento mensal ficou próximo de **1,20%**, equivalente a cerca de **99% do CDI no período**. Mas afinal, esse nível de rendimento é sustentável nos próximos meses?
 
 ---
 
@@ -50,7 +50,7 @@ Resultado: um mês forte, com geração de resultado **em linha com a distribui�
 
 ## 3. COMPOSIÇÃO DA CARTEIRA
 
-O KNSC11 é um fundo claramente focado em crédito imobiliário, com a seguinte alocação:
+O <a href="https://fiidireto.online/tickers/knsc11/" class="a-tickers">KNSC11</a> é um fundo claramente focado em crédito imobiliário, com a seguinte alocação:
 
 - **CRI:** ~99,6% do patrimônio  
 - **LCI:** 2,5%  
@@ -150,7 +150,7 @@ Isso indica:
 
 ## 8. CONCLUSÃO
 
-O KNSC11 entregou um mês sólido em março de 2026, com **dividendos de R$ 0,11 por cota**, sustentados principalmente por um cenário macro ainda bastante favorável, com inflação relevante e juros elevados. A carteira segue bem diversificada, com forte predominância em CRIs indexados ao IPCA e CDI, além de boas taxas médias, como **IPCA + 10,31%**.
+O <a href="https://fiidireto.online/tickers/knsc11/" class="a-tickers">KNSC11</a> entregou um mês sólido em março de 2026, com **dividendos de R$ 0,11 por cota**, sustentados principalmente por um cenário macro ainda bastante favorável, com inflação relevante e juros elevados. A carteira segue bem diversificada, com forte predominância em CRIs indexados ao IPCA e CDI, além de boas taxas médias, como **IPCA + 10,31%**.
 
 Os principais pontos de atenção ficam por conta do **ágio na cota**, que reduz o retorno para novos investidores, e da dependência do cenário macro — especialmente da inflação e da Selic — para manter esse nível de rendimento. Além disso, a presença de operações compromissadas exige monitoramento, embora esteja em patamar considerado adequado pela gestão.
 
