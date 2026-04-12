@@ -6,7 +6,7 @@ ticker: "AFHI11"
 slug: "relatorio-gerencial-afhi11-fevereiro-2026"
 ---
 
-O AFHI11, fundo imobiliário de recebíveis (CRI), entregou em fevereiro de 2026 um rendimento de **R$ 0,97 por cota**, equivalente a um **dividend yield mensal de 1,01%**. A cota de mercado fechou em **R$ 96,15**, levemente acima do valor patrimonial de **R$ 95,25**, enquanto o fundo já conta com **38.231 cotistas**.<!--more--> Além disso, o resultado gerado no mês foi de **R$ 1,01 por cota**, mostrando consistência operacional. Mas será que esse nível de rendimento é sustentável nos próximos meses?
+O <a href="https://fiidireto.online/tickers/afhi11/" class="a-tickers">AFHI11</a>, fundo imobiliário de recebíveis (CRI), entregou em fevereiro de 2026 um rendimento de **R$ 0,97 por cota**, equivalente a um **dividend yield mensal de 1,01%**. A cota de mercado fechou em **R$ 96,15**, levemente acima do valor patrimonial de **R$ 95,25**, enquanto o fundo já conta com **38.231 cotistas**.<!--more--> Além disso, o resultado gerado no mês foi de **R$ 1,01 por cota**, mostrando consistência operacional. Mas será que esse nível de rendimento é sustentável nos próximos meses?
 
 ## 1. DADOS DA COTA
 
@@ -49,7 +49,7 @@ Isso mostra que o fundo segue com uma estratégia de distribuição **mais conse
 
 ## 3. COMPOSIÇÃO DA CARTEIRA
 
-A carteira do AFHI11 é altamente diversificada em CRIs, com:
+A carteira do <a href="https://fiidireto.online/tickers/afhi11/" class="a-tickers">AFHI11</a> é altamente diversificada em CRIs, com:
 
 ### Alocação por indexador:
 - **IPCA+:** 73,00%  
@@ -158,7 +158,7 @@ Liquidez considerada adequada para o tamanho do fundo.
 
 ## 8. CONCLUSÃO
 
-O AFHI11 apresentou um mês consistente, com destaque para:
+O <a href="https://fiidireto.online/tickers/afhi11/" class="a-tickers">AFHI11</a> apresentou um mês consistente, com destaque para:
 
 - Dividendos acima de 1% ao mês  
 - Resultado superior ao distribuído  
