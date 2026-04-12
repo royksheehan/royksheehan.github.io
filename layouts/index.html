@@ -52,20 +52,20 @@
       {{ if or (eq $rootSection "Fundo de Papel") (eq $currentSection "Fundo de Papel") }}{{ $numClass = "num-papel" }}{{ end }}
       {{ if or (eq $rootSection "Fiagro") (eq $currentSection "Fiagro") }}{{ $numClass = "num-fiagro" }}{{ end }}
 
-      <a href="{{ $p.RelPermalink }}" class="post-card">
+      <article class="post-card">
         <div class="post-num {{ $numClass }}"></div>
         <div class="post-body">
           <div class="post-cats">
             {{ with $p.CurrentSection.Parent }}<span class="post-cat-parent">{{ .Title }}</span>{{ end }}
             <span class="post-cat">{{ $p.CurrentSection.Title }}</span>
           </div>
-          <h2 class="post-title">{{ $p.Title }}</h2>
+          <h2 class="post-title"><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h2>
           <p class="post-excerpt">{{ $p.Summary }}</p>
           <div class="post-footer">
             <span class="post-date">{{ $p.Date.Format "02 Jan 2006" }}</span>
           </div>
         </div>
-      </a>
+      </article>
       {{ end }}
     </div>
     <div class="see-all">
