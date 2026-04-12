@@ -6,13 +6,13 @@ ticker: "MANA11"
 slug: "relatorio-gerencial-mana11-fevereiro-2026"
 ---
 
-O **MANA11** encerrou fevereiro de 2026 distribuindo R$ 0,11 por cota, entregando um dividend yield anualizado de 15,0% ao ano — isento de imposto de renda para pessoas físicas — e equivalente a 138,6% do CDI líquido no período.<!--more--> A cota de mercado fechou em R$ 9,37, com um deságio de apenas 1,16% em relação ao valor patrimonial de R$ 9,48, o que mostra que o fundo está sendo negociado perto do seu valor justo. Desde o início, em maio de 2022, a cota patrimonial ajustada acumula +52,1% de retorno, superando o IFIX em 130% e o CDI equivalente em 110%. Com um portfólio híbrido que mistura CRIs, FIIs, ações imobiliárias e projetos de incorporação residencial, mas com a consistência de pagar R$ 0,11 por cota mês após mês — o que exatamente sustenta esse resultado em um cenário tão desafiador?
+O **<a href="https://fiidireto.online/tickers/mana11/" class="a-tickers">MANA11</a>** encerrou fevereiro de 2026 distribuindo R$ 0,11 por cota, entregando um dividend yield anualizado de 15,0% ao ano — isento de imposto de renda para pessoas físicas — e equivalente a 138,6% do CDI líquido no período.<!--more--> A cota de mercado fechou em R$ 9,37, com um deságio de apenas 1,16% em relação ao valor patrimonial de R$ 9,48, o que mostra que o fundo está sendo negociado perto do seu valor justo. Desde o início, em maio de 2022, a cota patrimonial ajustada acumula +52,1% de retorno, superando o IFIX em 130% e o CDI equivalente em 110%. Com um portfólio híbrido que mistura CRIs, FIIs, ações imobiliárias e projetos de incorporação residencial, mas com a consistência de pagar R$ 0,11 por cota mês após mês — o que exatamente sustenta esse resultado em um cenário tão desafiador?
 
 ## APRESENTAÇÃO DO FUNDO
 
-O **Manatí Hedge Fund FII**, ticker **MANA11**, é um fundo híbrido de gestão ativa classificado pela Anbima como **FII TVM Gestão Ativa — Títulos e Valores Imobiliários**. A gestão é feita pela **Manatí Capital Management** e a administração é responsabilidade do **Banco Daycoval S.A.** O fundo existe desde 26 de maio de 2022 e já passou por cinco emissões de cotas, encerrando fevereiro com 37.536.140 cotas emitidas.
+O **Manatí Hedge Fund FII**, ticker **<a href="https://fiidireto.online/tickers/mana11/" class="a-tickers">MANA11</a>**, é um fundo híbrido de gestão ativa classificado pela Anbima como **FII TVM Gestão Ativa — Títulos e Valores Imobiliários**. A gestão é feita pela **Manatí Capital Management** e a administração é responsabilidade do **Banco Daycoval S.A.** O fundo existe desde 26 de maio de 2022 e já passou por cinco emissões de cotas, encerrando fevereiro com 37.536.140 cotas emitidas.
 
-✅ O objetivo do fundo é auferir rendimentos investindo em um espectro amplo de ativos imobiliários: CRIs, FIIs, FIDCs imobiliários, ações imobiliárias, cotas de SPE, imóveis e outros títulos do setor. Essa flexibilidade de mandato é o que diferencia o MANA11 dos fundos de papel ou de tijolo tradicionais — e também o que exige mais atenção do investidor para acompanhar a gestão.
+✅ O objetivo do fundo é auferir rendimentos investindo em um espectro amplo de ativos imobiliários: CRIs, FIIs, FIDCs imobiliários, ações imobiliárias, cotas de SPE, imóveis e outros títulos do setor. Essa flexibilidade de mandato é o que diferencia o <a href="https://fiidireto.online/tickers/mana11/" class="a-tickers">MANA11</a> dos fundos de papel ou de tijolo tradicionais — e também o que exige mais atenção do investidor para acompanhar a gestão.
 
 O patrimônio líquido encerrou o mês em R$ 355,85 milhões, com 36.565 cotistas — crescimento de 3,6% em relação ao mês anterior, o que representa um novo recorde da base de investidores do fundo. A taxa de administração é de 1,00% ao ano sobre o PL (all-in, já incluindo gestão e custódia), e há uma taxa de performance de 20% sobre o que superar IPCA mais o yield do IMA-B5, apurada semestralmente.
 
@@ -24,7 +24,7 @@ O valor patrimonial encerrou fevereiro em R$ 9,48 por cota, enquanto o valor de 
 
 ## DIVIDENDOS (PONTO POSITIVO ✅)
 
-✅ Em fevereiro, o MANA11 distribuiu R$ 0,11 por cota, com pagamento no 15º dia útil de março de 2026. O dividend yield anualizado ficou em 15,0% ao ano sobre a cota de mercado, ou o equivalente a IPCA mais 10,7% ao ano quando comparado à inflação estimada de 3,91% pelo Boletim Focus.
+✅ Em fevereiro, o <a href="https://fiidireto.online/tickers/mana11/" class="a-tickers">MANA11</a> distribuiu R$ 0,11 por cota, com pagamento no 15º dia útil de março de 2026. O dividend yield anualizado ficou em 15,0% ao ano sobre a cota de mercado, ou o equivalente a IPCA mais 10,7% ao ano quando comparado à inflação estimada de 3,91% pelo Boletim Focus.
 
 O fundo mantém um guidance de distribuição entre R$ 0,10 e R$ 0,12 por cota ao mês para o primeiro trimestre de 2026, e fevereiro ficou exatamente no centro da banda. O resultado operacional do mês foi de R$ 0,126 por cota — ligeiramente acima dos R$ 0,11 distribuídos — e essa diferença marginal permanece como reserva para reforçar distribuições futuras em meses de menor resultado recorrente.
 
@@ -58,7 +58,7 @@ O fundo tem garantias estruturadas na maioria dos papéis, com alienação fiduc
 
 O problema surgiu no último dia do mês, com o início do conflito entre Israel, EUA e Irã, que rapidamente escalou para um confronto regional e provocou forte alta no petróleo. A gestão alerta que esse choque tende a pressionar a inflação de curto prazo globalmente, dificultando o trabalho dos bancos centrais e aumentando o risco de que o ciclo de afrouxamento nos EUA seja mais tardio do que o mercado precificava. No Brasil, o Copom havia praticamente telegrafado o início do ciclo de corte para março, mas esse cenário foi construído sobre a premissa de estabilidade global — premissa que se alterou significativamente ao final do mês.
 
-Para o MANA11, o cenário é duplamente relevante: uma Selic alta por mais tempo é positiva para o carrego dos CRIs indexados ao CDI, mas o aumento da inflação pode ser capturado positivamente pelos papéis indexados ao IPCA. A gestão destaca que a maior volatilidade justamente amplia a relevância da gestão ativa para capturar oscilações e gerar resultados extraordinários.
+Para o <a href="https://fiidireto.online/tickers/mana11/" class="a-tickers">MANA11</a>, o cenário é duplamente relevante: uma Selic alta por mais tempo é positiva para o carrego dos CRIs indexados ao CDI, mas o aumento da inflação pode ser capturado positivamente pelos papéis indexados ao IPCA. A gestão destaca que a maior volatilidade justamente amplia a relevância da gestão ativa para capturar oscilações e gerar resultados extraordinários.
 
 ## LIQUIDEZ (PONTO DE ATENÇÃO ⚠️)
 
@@ -68,7 +68,7 @@ O fundo vem crescendo de forma consistente: saiu de volumes médios abaixo de R$
 
 ## CONCLUSÃO
 
-O MANA11 apresentou em fevereiro de 2026 um resultado robusto e dentro do guidance, com gestão ativa demonstrando valor concreto. Os três pontos mais importantes para o investidor acompanhar são os seguintes.
+O <a href="https://fiidireto.online/tickers/mana11/" class="a-tickers">MANA11</a> apresentou em fevereiro de 2026 um resultado robusto e dentro do guidance, com gestão ativa demonstrando valor concreto. Os três pontos mais importantes para o investidor acompanhar são os seguintes.
 
 **Primeiro**, o dividendo de R$ 0,11 por cota é consistente, isento de IR e expressivo frente ao CDI — mas depende da combinação de carrego recorrente dos CRIs com ganhos extraordinários da gestão ativa. Sem esses resultados extras, o dividend yield seria menor, o que coloca um peso relevante na capacidade de execução contínua da gestão.
 
