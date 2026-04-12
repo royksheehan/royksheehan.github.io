@@ -20,7 +20,7 @@
       <h1 class="post-title-single">{{ .Title }}</h1>
       {{ with .Description }}<p class="post-desc">{{ . }}</p>{{ end }}
       <div class="post-meta-bar">
-        <span class="post-date">{{ .Date.Format "02 de January de 2006" }}</span>
+        <span class="post-date">{{ .Date.Format "02/01/2026" }}</span>
         <span class="post-reading">{{ .ReadingTime }} min de leitura</span>
         {{ with .Params.ticker }}
           <a href="{{ "tickers/" | absURL }}{{ lower . }}/" class="post-ticker ticker-fundo">{{ . }}</a>
