@@ -6,9 +6,9 @@ ticker: "PMLL11"
 slug: "relatorio-gerencial-pmll11-fevereiro-2026"
 ---
 
-O **<a href="https://fiidireto.online/tickers/pmll11/">PMLL11</a>**, fundo de shopping centers da Patria, entregou em fevereiro de 2026 um rendimento de **R$ 1,00 por cota**, mantendo o guidance do semestre e um dividend yield anualizado de aproximadamente **11,0%** pela cota de mercado.<!--more--> O fundo está sendo negociado com **desconto**, com cota a **R$ 108,94** frente a um valor patrimonial de **R$ 117,68**, e já conta com um patrimônio de **R$ 1,6 bilhão**. Além disso, o portfólio segue com indicadores operacionais fortes, incluindo **ocupação próxima de 97%** e crescimento nas vendas dos lojistas.
+O **<a href="https://fiidireto.online/tickers/pmll11/" class="a-tickers">PMLL11</a>**, fundo de shopping centers da Patria, entregou em fevereiro de 2026 um rendimento de **R$ 1,00 por cota**, mantendo o guidance do semestre e um dividend yield anualizado de aproximadamente **11,0%** pela cota de mercado.<!--more--> O fundo está sendo negociado com **desconto**, com cota a **R$ 108,94** frente a um valor patrimonial de **R$ 117,68**, e já conta com um patrimônio de **R$ 1,6 bilhão**. Além disso, o portfólio segue com indicadores operacionais fortes, incluindo **ocupação próxima de 97%** e crescimento nas vendas dos lojistas.
 
-Mas a pergunta que fica é: com bons indicadores operacionais e desconto em bolsa, o <a href="https://fiidireto.online/tickers/pmll11/">PMLL11</a> ainda tem espaço para valorização ou os riscos começam a aparecer?
+Mas a pergunta que fica é: com bons indicadores operacionais e desconto em bolsa, o <a href="https://fiidireto.online/tickers/pmll11/" class="a-tickers">PMLL11</a> ainda tem espaço para valorização ou os riscos começam a aparecer?
 
 ---
 
@@ -178,7 +178,7 @@ Liquidez considerada boa.
 
 ## 8. CONCLUSÃO
 
-O <a href="https://fiidireto.online/tickers/pmll11/">PMLL11</a> apresentou um mês sólido, com destaque para:
+O <a href="https://fiidireto.online/tickers/pmll11/" class="a-tickers">PMLL11</a> apresentou um mês sólido, com destaque para:
 
 - Dividendos de **R$ 1,00 por cota**
 - **Desconto em relação ao VP**
