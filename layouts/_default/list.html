@@ -1,15 +1,20 @@
 {{ define "main" }}
 <div class="container page-body">
   <div class="posts-wrap">
+    {{ $displayTitle := .Title }}
+    {{ if eq .Kind "term" }}
+      {{ $displayTitle = replace .Title "-" " " }}
+      {{ $displayTitle = replace $displayTitle " De " " de " }}
+    {{ end }}
 
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="{{ .Site.BaseURL }}">Início</a>
       <span>›</span>
-      <span>{{ .Title }}</span>
+      <span>{{ $displayTitle }}</span>
     </nav>
 
     <div class="section-header">
-      <h1 class="section-title">{{ .Title }}</h1>
+      <h1 class="section-title">{{ $displayTitle }}</h1>
       {{ with .Description }}<p class="section-desc">{{ . }}</p>{{ end }}
 
       {{ if eq .Section "fiis" }}
