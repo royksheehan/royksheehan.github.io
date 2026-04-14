@@ -2,8 +2,8 @@
 <div class="container page-body">
   <div class="posts-wrap">
     {{ $displayTitle := .Title }}
-    {{ with .Data.Term }}
-      {{ $displayTitle = humanize . | title | replace " De " " de " }}
+    {{ if eq .Kind "term" }}
+      {{ $displayTitle = $displayTitle | replace "-" " " | replace " De " " de " }}
     {{ end }}
 
     <nav class="breadcrumb" aria-label="Breadcrumb">
