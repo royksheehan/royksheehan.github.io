@@ -3,7 +3,7 @@
   <div class="posts-wrap">
     {{ $displayTitle := .Title }}
     {{ if eq .Kind "term" }}
-      {{ $displayTitle = humanize .Data.Term }}
+      {{ $displayTitle = partial "tag-label.html" .Data.Term }}
     {{ end }}
 
     <nav class="breadcrumb" aria-label="Breadcrumb">
