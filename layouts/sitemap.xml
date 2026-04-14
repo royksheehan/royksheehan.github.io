@@ -64,4 +64,22 @@
     <priority>0.65</priority>
   </url>
   {{- end }}
+
+  {{- range .Site.Taxonomies.tags }}
+  {{- $safeLastmod := .Page.Lastmod }}
+  {{- if $safeLastmod.IsZero }}
+    {{- $safeLastmod = .Page.Date }}
+  {{- end }}
+  {{- if $safeLastmod.IsZero }}
+    {{- $safeLastmod = .Page.PublishDate }}
+  {{- end }}
+  <url>
+    <loc>{{ .Page.Permalink }}</loc>
+    {{- if not $safeLastmod.IsZero }}
+    <lastmod>{{ $safeLastmod.Format "2006-01-02" }}</lastmod>
+    {{- end }}
+    <changefreq>weekly</changefreq>
+    <priority>0.60</priority>
+  </url>
+  {{- end }}
 </urlset>
