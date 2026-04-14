@@ -3,6 +3,7 @@ title: "PMLL11: ocupação de 96,6% sustenta dividendos?"
 date: 2026-03-29
 description: "PMLL11 segue forte operacionalmente — vale investir?"
 ticker: "PMLL11"
+tags: ["fundo-de-tijolo", "shoppings"]
 slug: "relatorio-gerencial-pmll11-fevereiro-2026"
 ---
 

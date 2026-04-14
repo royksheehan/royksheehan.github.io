@@ -3,6 +3,7 @@ title: "HGBS11: yield de 10% e reciclagem — oportunidade agora?"
 date: 2026-04-10
 description: "HGBS11 combina ganho de capital e NOI em alta: o que esperar dos dividendos"
 ticker: "hgbs11"
+tags: ["fundo-de-tijolo", "shoppings"]
 slug: "relatorio-gerencial-hgbs11-marco-2026"
 ---
 
@@ -39,7 +40,7 @@ O resultado do mês foi de R$ 0,164 por cota, mas a distribuição foi de R$ 0,1
 
 ### 3. COMPOSIÇÃO DA CARTEIRA
 
-O <a href="https://fiidireto.online/tickers/hgbs11/" class="a-tickers">HGBS11</a> é um <a href="https://fiidireto.online/posts/fundo-de-tijolo/">Fundo de Tijolo</a> focado em **Shopping Centers**.
+O <a href="https://fiidireto.online/tickers/hgbs11/" class="a-tickers">HGBS11</a> é um <a href="https://fiidireto.online/tags/fundo-de-tijolo/">Fundo de Tijolo</a> focado em **Shopping Centers**.
 
 - **Alocação Estratégica:** **96,4%** em Ativos Estratégicos (Shoppings e FIIs de Shoppings).
 - **Alocação Tática/Liquidez:** **3,2%** entre CRIs, LCIs e FIIs Líquidos.

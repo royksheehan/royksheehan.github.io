@@ -103,7 +103,7 @@
   "description": {{ $defaultDescription | jsonify }},
   "potentialAction": {
     "@type": "SearchAction",
-    "target": {{ (printf "%sposts/?q={search_term_string}" .Site.BaseURL) | jsonify }},
+    "target": {{ (printf "%sfiis/?q={search_term_string}" .Site.BaseURL) | jsonify }},
     "query-input": "required name=search_term_string"
   }
 }

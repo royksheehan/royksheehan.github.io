@@ -3,6 +3,7 @@ title: "MCRE11: lucro de R$0,24 e reserva alta — dividendos seguem firmes?"
 date: 2026-04-10
 description: "MCRE11 distribui R$0,11 por cota e acumula reservas — estratégia garante estabilidade futura?"
 ticker: "MCRE11"
+tags: ["fundo-de-papel", "multiestrategia"]
 slug: "relatorio-gerencial-mcre11-marco-2026"
 ---
 
@@ -53,7 +54,7 @@ Apesar do resultado forte, parte relevante veio de ganho não recorrente. A gest
 
 ## 3. COMPOSIÇÃO DA CARTEIRA
 
-O <a href="https://fiidireto.online/tickers/mcre11/" class="a-tickers">MCRE11</a> é um FII **<a href="https://fiidireto.online/posts/fundo-de-papel/multiestrategia/">multiestratégia</a>**, com forte presença em crédito, mas também com exposição relevante a ganho de capital.
+O <a href="https://fiidireto.online/tickers/mcre11/" class="a-tickers">MCRE11</a> é um FII **<a href="https://fiidireto.online/tags/multiestrategia/">multiestratégia</a>**, com forte presença em crédito, mas também com exposição relevante a ganho de capital.
 
 ### Alocação por classe:
 

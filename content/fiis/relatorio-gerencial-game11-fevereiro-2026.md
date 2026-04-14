@@ -3,6 +3,7 @@ title: "GAME11: por que a gestora está trocando IPCA por prefixados?"
 date: 2026-03-26
 description: "GAME11 fez uma aposta ousada em prefixados com a Selic em 15%. E agora, o que esperar?"
 ticker: "GAME11"
+tags: ["fundo-de-papel", "multiestrategia"]
 slug: "relatorio-gerencial-game11-fevereiro-2026"
 ---
 

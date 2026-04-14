@@ -3,16 +3,17 @@
   <article class="single-post" data-pagefind-body>
 
     <!-- Breadcrumb -->
+    {{ $tags := .Params.tags | default (slice) }}
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="{{ .Site.BaseURL }}">Início</a>
-      {{ with .CurrentSection.Parent }}
-        {{ if ne .Title "posts" }}
-          <span>›</span>
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        {{ end }}
+      {{ if gt (len $tags) 0 }}
+        <span>›</span>
+        <a href="{{ "tags/" | absURL }}{{ (index $tags 0) | urlize }}/">{{ (index $tags 0) | humanize }}</a>
       {{ end }}
-      <span>›</span>
-      <a href="{{ .CurrentSection.RelPermalink }}">{{ .CurrentSection.Title }}</a>
+      {{ if gt (len $tags) 1 }}
+        <span>›</span>
+        <a href="{{ "tags/" | absURL }}{{ (index $tags 1) | urlize }}/">{{ (index $tags 1) | humanize }}</a>
+      {{ end }}
     </nav>
 
     <!-- Cabeçalho -->
@@ -44,20 +45,14 @@
 
     <!-- Badges de categoria abaixo do disclaimer -->
     <div class="post-category-badges">
-      {{ with .CurrentSection.Parent }}
-        {{ if ne .Title "posts" }}
-          {{ $class := "ticker-tijolo" }}
-          {{ if eq .Title "Fundo de Papel" }}{{ $class = "ticker-papel" }}{{ end }}
-          {{ if eq .Title "Fiagro" }}{{ $class = "ticker-fiagro" }}{{ end }}
-          <a href="{{ .RelPermalink }}" class="post-ticker {{ $class }}">{{ .Title }}</a>
-        {{ end }}
-      {{ end }}
+      {{ $class := "ticker-tijolo" }}
+      {{ if and (gt (len $tags) 0) (eq (index $tags 0) "fundo-de-papel") }}{{ $class = "ticker-papel" }}{{ end }}
+      {{ if and (gt (len $tags) 0) (eq (index $tags 0) "fiagro") }}{{ $class = "ticker-fiagro" }}{{ end }}
+      {{ if gt (len $tags) 0 }}<a href="{{ "tags/" | absURL }}{{ (index $tags 0) | urlize }}/" class="post-ticker {{ $class }}">{{ (index $tags 0) | humanize }}</a>{{ end }}
       {{ $subClass := "ticker-tijolo" }}
-      {{ with .CurrentSection.Parent }}
-        {{ if eq .Title "Fundo de Papel" }}{{ $subClass = "ticker-papel" }}{{ end }}
-        {{ if eq .Title "Fiagro" }}{{ $subClass = "ticker-fiagro" }}{{ end }}
-      {{ end }}
-      <a href="{{ .CurrentSection.RelPermalink }}" class="post-ticker {{ $subClass }}">{{ .CurrentSection.Title }}</a>
+      {{ if and (gt (len $tags) 0) (eq (index $tags 0) "fundo-de-papel") }}{{ $subClass = "ticker-papel" }}{{ end }}
+      {{ if and (gt (len $tags) 0) (eq (index $tags 0) "fiagro") }}{{ $subClass = "ticker-fiagro" }}{{ end }}
+      {{ if gt (len $tags) 1 }}<a href="{{ "tags/" | absURL }}{{ (index $tags 1) | urlize }}/" class="post-ticker {{ $subClass }}">{{ (index $tags 1) | humanize }}</a>{{ end }}
     </div>
 
     <!-- Navegação entre posts -->

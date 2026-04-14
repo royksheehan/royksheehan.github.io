@@ -3,6 +3,7 @@ title: "TGAR11: cota 27% abaixo do VP — oportunidade ou armadilha?"
 date: 2026-04-06
 description: "O TGAR11 segue gerando caixa com vendas imobiliárias, mas mercado ainda precifica risco elevado"
 ticker: "TGAR11"
+tags: ["fundo-de-tijolo", "hibrido"]
 slug: "relatorio-gerencial-tgar11-fev-2026"
 ---
 

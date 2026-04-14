@@ -3,6 +3,7 @@ title: "KNSC11: IPCA impulsiona rendimento — até quando?"
 date: 2026-04-08
 description: "KNSC11 entrega 1,20% no mês: dividendos sustentáveis ou efeito pontual?"
 ticker: "KNSC11"
+tags: ["fundo-de-papel"]
 slug: "relatorio-gerencial-knsc11-marco-2026"
 ---
 

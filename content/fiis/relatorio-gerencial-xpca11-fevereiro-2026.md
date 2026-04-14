@@ -3,6 +3,7 @@ title: "XPCA11: carteira CDI+ e yield alto — até quando?"
 date: 2026-03-27
 description: "XPCA11: como o fundo está gerando mais de 1,5% ao mês"
 ticker: "XPCA11"
+tags: ["fiagro"]
 slug: "relatorio-gerencial-xpca11-fevereiro-2026"
 ---
 

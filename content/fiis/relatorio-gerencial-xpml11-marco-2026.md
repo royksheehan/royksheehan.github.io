@@ -3,6 +3,7 @@ title: "XPML11: compra de R$ 608 milhões — melhora os resultados?"
 date: 2026-04-08
 description: "XPML11 com DY próximo de 10%: análise completa do relatório de março/2026"
 ticker: "xpml11"
+tags: ["fundo-de-tijolo", "shoppings"]
 slug: "relatorio-gerencial-xpml11-marco-2026"
 ---
 

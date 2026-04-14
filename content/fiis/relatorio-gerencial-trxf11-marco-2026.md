@@ -3,6 +3,7 @@ title: "TRXF11: nova aquisição de R$328M — impacto nos dividendos?"
 date: 2026-04-06
 description: "Análise do TRXF11: portfólio, dividendos e impacto das novas aquisições no fundo"
 ticker: "TRXF11"
+tags: ["fundo-de-tijolo", "hibrido"]
 slug: "relatorio-gerencial-trxf11-marco-2026"
 ---
 

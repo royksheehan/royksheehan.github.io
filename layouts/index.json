@@ -1,2 +1,2 @@
-{{- $posts := where .Site.RegularPages "Section" "posts" -}}
+{{- $posts := where .Site.RegularPages "Section" "fiis" -}}
 [{{- range $i, $p := $posts -}}{{- if $i }},{{ end -}}{"ticker":"{{- default "" $p.Params.ticker | lower -}}","title":{{- $p.Title | jsonify -}},"url":"{{- $p.RelPermalink -}}"}{{- end -}}]
