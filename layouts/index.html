@@ -20,8 +20,8 @@
       <p class="hero-excerpt">{{ .Summary }}</p>
       <div class="hero-meta">
         <span class="hero-date">{{ .Date.Format "02/01/2006" }}</span>
-        {{ if gt (len $latestTags) 0 }}<a href="{{ "tags/" | absURL }}{{ (index $latestTags 0) | urlize }}/" class="hero-cat">{{ (index $latestTags 0) | humanize }}</a>{{ end }}
-        {{ if gt (len $latestTags) 1 }}<a href="{{ "tags/" | absURL }}{{ (index $latestTags 1) | urlize }}/" class="hero-cat">{{ (index $latestTags 1) | humanize }}</a>{{ end }}
+        {{ if gt (len $latestTags) 0 }}<a href="{{ "tags/" | absURL }}{{ (index $latestTags 0) | urlize }}/" class="hero-cat">{{ partial "tag-label.html" (index $latestTags 0) }}</a>{{ end }}
+        {{ if gt (len $latestTags) 1 }}<a href="{{ "tags/" | absURL }}{{ (index $latestTags 1) | urlize }}/" class="hero-cat">{{ partial "tag-label.html" (index $latestTags 1) }}</a>{{ end }}
       </div>
       <a href="{{ .RelPermalink }}" class="btn-read">Ler resumo →</a>
     </div>
@@ -29,7 +29,7 @@
       {{ range $others }}
       {{ $otherTags := .Params.tags | default (slice) }}
       <a href="{{ .RelPermalink }}" class="mini-card">
-        <div class="mini-cat">{{ if gt (len $otherTags) 0 }}{{ (index $otherTags 0) | humanize }}{{ else }}FII{{ end }}</div>
+        <div class="mini-cat">{{ if gt (len $otherTags) 0 }}{{ partial "tag-label.html" (index $otherTags 0) }}{{ else }}FII{{ end }}</div>
         <div class="mini-title">{{ .Title }}</div>
         <div class="mini-date">{{ .Date.Format "02/01/2006" }}</div>
       </a>
@@ -57,8 +57,8 @@
         <div class="post-num {{ $numClass }}"></div>
         <div class="post-body">
           <div class="post-cats">
-            {{ with index $tags 0 }}<span class="post-cat-parent">{{ . | humanize }}</span>{{ end }}
-            {{ with index $tags 1 }}<span class="post-cat">{{ . | humanize }}</span>{{ end }}
+            {{ with index $tags 0 }}<span class="post-cat-parent">{{ partial "tag-label.html" . }}</span>{{ end }}
+            {{ with index $tags 1 }}<span class="post-cat">{{ partial "tag-label.html" . }}</span>{{ end }}
           </div>
           <h2 class="post-title"><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h2>
           <p class="post-excerpt">{{ $p.Summary }}</p>

@@ -1,0 +1,15 @@
+{{- $tag := lower (default "" .) -}}
+{{- $labels := dict
+  "fundo-de-tijolo" "Fundo de Tijolo"
+  "fundo-de-papel" "Fundo de Papel"
+  "fiagro" "Fiagro"
+  "fi-infra" "FI-Infra"
+  "fundos-de-fundos" "Fundos de Fundos"
+  "logistico" "Logístico"
+  "shoppings" "Shoppings"
+  "lajes-corporativas" "Lajes Corporativas"
+  "multiestrategia" "Multiestratégia"
+  "hibrido" "Híbrido"
+  -}}
+{{- $label := index $labels $tag | default (humanize $tag) -}}
+{{- return $label -}}
