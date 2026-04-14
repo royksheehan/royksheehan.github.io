@@ -43,8 +43,8 @@
           <div class="post-num {{ $numClass }}"></div>
           <div class="post-body">
             <div class="post-cats">
-              {{ if gt (len $tags) 0 }}<span class="post-cat-parent">{{ (index $tags 0) | humanize }}</span>{{ end }}
-              {{ if gt (len $tags) 1 }}<span class="post-cat">{{ (index $tags 1) | humanize }}</span>{{ end }}
+              {{ if gt (len $tags) 0 }}<span class="post-cat-parent">{{ partial "tag-label.html" (index $tags 0) }}</span>{{ end }}
+              {{ if gt (len $tags) 1 }}<span class="post-cat">{{ partial "tag-label.html" (index $tags 1) }}</span>{{ end }}
             </div>
             <h2 class="post-title"><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h2>
             <p class="post-excerpt">{{ $p.Summary }}</p>

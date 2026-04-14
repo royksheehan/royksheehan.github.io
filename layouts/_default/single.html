@@ -8,11 +8,11 @@
       <a href="{{ .Site.BaseURL }}">Início</a>
       {{ if gt (len $tags) 0 }}
         <span>›</span>
-        <a href="{{ "tags/" | absURL }}{{ (index $tags 0) | urlize }}/">{{ (index $tags 0) | humanize }}</a>
+        <a href="{{ "tags/" | absURL }}{{ (index $tags 0) | urlize }}/">{{ partial "tag-label.html" (index $tags 0) }}</a>
       {{ end }}
       {{ if gt (len $tags) 1 }}
         <span>›</span>
-        <a href="{{ "tags/" | absURL }}{{ (index $tags 1) | urlize }}/">{{ (index $tags 1) | humanize }}</a>
+        <a href="{{ "tags/" | absURL }}{{ (index $tags 1) | urlize }}/">{{ partial "tag-label.html" (index $tags 1) }}</a>
       {{ end }}
     </nav>
 
@@ -48,11 +48,11 @@
       {{ $class := "ticker-tijolo" }}
       {{ if and (gt (len $tags) 0) (eq (index $tags 0) "fundo-de-papel") }}{{ $class = "ticker-papel" }}{{ end }}
       {{ if and (gt (len $tags) 0) (eq (index $tags 0) "fiagro") }}{{ $class = "ticker-fiagro" }}{{ end }}
-      {{ if gt (len $tags) 0 }}<a href="{{ "tags/" | absURL }}{{ (index $tags 0) | urlize }}/" class="post-ticker {{ $class }}">{{ (index $tags 0) | humanize }}</a>{{ end }}
+      {{ if gt (len $tags) 0 }}<a href="{{ "tags/" | absURL }}{{ (index $tags 0) | urlize }}/" class="post-ticker {{ $class }}">{{ partial "tag-label.html" (index $tags 0) }}</a>{{ end }}
       {{ $subClass := "ticker-tijolo" }}
       {{ if and (gt (len $tags) 0) (eq (index $tags 0) "fundo-de-papel") }}{{ $subClass = "ticker-papel" }}{{ end }}
       {{ if and (gt (len $tags) 0) (eq (index $tags 0) "fiagro") }}{{ $subClass = "ticker-fiagro" }}{{ end }}
-      {{ if gt (len $tags) 1 }}<a href="{{ "tags/" | absURL }}{{ (index $tags 1) | urlize }}/" class="post-ticker {{ $subClass }}">{{ (index $tags 1) | humanize }}</a>{{ end }}
+      {{ if gt (len $tags) 1 }}<a href="{{ "tags/" | absURL }}{{ (index $tags 1) | urlize }}/" class="post-ticker {{ $subClass }}">{{ partial "tag-label.html" (index $tags 1) }}</a>{{ end }}
     </div>
 
     <!-- Navegação entre posts -->
