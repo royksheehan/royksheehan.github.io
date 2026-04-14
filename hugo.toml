@@ -9,6 +9,7 @@ summaryLength = 40
 
 [taxonomies]
   ticker = "tickers"
+  tag = "tags"
 
 [params]
   description = "Resumos e análises de relatórios gerenciais de Fundos Imobiliários"
@@ -38,36 +39,36 @@ summaryLength = 40
 
 [[menus.main]]
   name   = "FIIs"
-  url    = "/posts/"
+  url    = "/fiis/"
   weight = 2
 
 [[menus.main]]
   name   = "Fundo de Tijolo"
-  url    = "/posts/fundo-de-tijolo/"
+  url    = "/tags/fundo-de-tijolo/"
   parent = "FIIs"
   weight = 1
 
 [[menus.main]]
   name   = "Fundo de Papel"
-  url    = "/posts/fundo-de-papel/"
+  url    = "/tags/fundo-de-papel/"
   parent = "FIIs"
   weight = 2
 
 [[menus.main]]
   name   = "Fiagro"
-  url    = "/posts/fiagro/"
+  url    = "/tags/fiagro/"
   parent = "FIIs"
   weight = 3
 
 [[menus.main]]
   name   = "FI-Infra"
-  url    = "/posts/fi-infra/"
+  url    = "/tags/fi-infra/"
   parent = "FIIs"
   weight = 4
 
 [[menus.main]]
   name   = "Fundos de Fundos"
-  url    = "/posts/fundos-de-fundos/"
+  url    = "/tags/fundos-de-fundos/"
   parent = "FIIs"
   weight = 5
 

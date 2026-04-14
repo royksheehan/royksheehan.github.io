@@ -21,7 +21,7 @@
     <div class="tickers-grid">
       {{ range $tickers.ByTitle }}
         {{ $tickerName := .Title }}
-        {{ $posts := where $.Site.RegularPages "Section" "posts" }}
+        {{ $posts := where $.Site.RegularPages "Section" "fiis" }}
         {{ $count := 0 }}
         {{ range $posts }}
           {{ if eq (upper (default "" .Params.ticker)) (upper $tickerName) }}

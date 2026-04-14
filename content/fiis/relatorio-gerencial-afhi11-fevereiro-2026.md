@@ -3,6 +3,7 @@ title: "AFHI11: carteira IPCA+ domina — proteção real?"
 date: 2026-03-27
 description: "AFHI11 segue consistente — mas há pontos de atenção?"
 ticker: "AFHI11"
+tags: ["fundo-de-papel"]
 slug: "relatorio-gerencial-afhi11-fevereiro-2026"
 ---
 

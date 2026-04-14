@@ -28,17 +28,17 @@
     <div class="sb-title">Categorias</div>
     <ul class="sb-cat-list">
       <li>
-        <a href="{{ "posts/fundo-de-tijolo/" | absURL }}" class="sb-cat-parent">Fundo de Tijolo</a>
+        <a href="{{ "tags/fundo-de-tijolo/" | absURL }}" class="sb-cat-parent">Fundo de Tijolo</a>
         <ul class="sb-cat-children">
-          <li><a href="{{ "posts/fundo-de-tijolo/shoppings/" | absURL }}">↳ Shoppings</a></li>
-          <li><a href="{{ "posts/fundo-de-tijolo/logistico/" | absURL }}">↳ Logístico / Galpões</a></li>
-          <li><a href="{{ "posts/fundo-de-tijolo/lajes-corporativas/" | absURL }}">↳ Lajes Corporativas</a></li>
+          <li><a href="{{ "tags/shoppings/" | absURL }}">↳ Shoppings</a></li>
+          <li><a href="{{ "tags/logistico/" | absURL }}">↳ Logístico / Galpões</a></li>
+          <li><a href="{{ "tags/lajes-corporativas/" | absURL }}">↳ Lajes Corporativas</a></li>
         </ul>
       </li>
       <li style="margin-top:10px">
-        <a href="{{ "posts/fundo-de-papel/" | absURL }}" class="sb-cat-parent">Fundo de Papel</a>
+        <a href="{{ "tags/fundo-de-papel/" | absURL }}" class="sb-cat-parent">Fundo de Papel</a>
         <ul class="sb-cat-children">
-          <li><a href="{{ "posts/fundo-de-papel/multiestrategia/" | absURL }}">↳ Multiestratégia</a></li>
+          <li><a href="{{ "tags/multiestrategia/" | absURL }}">↳ Multiestratégia</a></li>
         </ul>
       </li>
     </ul>
@@ -48,7 +48,7 @@
   <div class="sb-section">
     <div class="sb-title">Mais recentes</div>
     <ul class="sb-recent">
-      {{ $posts := where .Site.RegularPages "Section" "posts" }}
+      {{ $posts := where .Site.RegularPages "Section" "fiis" }}
       {{ range first 5 ($posts.ByDate.Reverse) }}
         <li>
           <a href="{{ .RelPermalink }}">{{ .Title }}</a>

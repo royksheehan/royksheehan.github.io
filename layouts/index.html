@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{ $posts := where .Site.RegularPages "Section" "posts" }}
+{{ $posts := where .Site.RegularPages "Section" "fiis" }}
 {{ $latest := first 1 ($posts.ByDate.Reverse) }}
 {{ $others := after 1 (first 4 ($posts.ByDate.Reverse)) }}
 
@@ -11,6 +11,7 @@
 </section>
 
 {{ range $latest }}
+{{ $latestTags := .Params.tags | default (slice) }}
 <section class="hero">
   <div class="container hero-inner">
     <div class="hero-left">
@@ -19,17 +20,16 @@
       <p class="hero-excerpt">{{ .Summary }}</p>
       <div class="hero-meta">
         <span class="hero-date">{{ .Date.Format "02/01/2006" }}</span>
-        {{ with .CurrentSection.Parent }}
-          <a href="{{ .RelPermalink }}" class="hero-cat">{{ .Title }}</a>
-        {{ end }}
-        <a href="{{ .CurrentSection.RelPermalink }}" class="hero-cat">{{ .CurrentSection.Title }}</a>
+        {{ if gt (len $latestTags) 0 }}<a href="{{ "tags/" | absURL }}{{ (index $latestTags 0) | urlize }}/" class="hero-cat">{{ (index $latestTags 0) | humanize }}</a>{{ end }}
+        {{ if gt (len $latestTags) 1 }}<a href="{{ "tags/" | absURL }}{{ (index $latestTags 1) | urlize }}/" class="hero-cat">{{ (index $latestTags 1) | humanize }}</a>{{ end }}
       </div>
       <a href="{{ .RelPermalink }}" class="btn-read">Ler resumo →</a>
     </div>
     <div class="hero-right">
       {{ range $others }}
+      {{ $otherTags := .Params.tags | default (slice) }}
       <a href="{{ .RelPermalink }}" class="mini-card">
-        <div class="mini-cat">{{ .CurrentSection.Title }}</div>
+        <div class="mini-cat">{{ if gt (len $otherTags) 0 }}{{ (index $otherTags 0) | humanize }}{{ else }}FII{{ end }}</div>
         <div class="mini-title">{{ .Title }}</div>
         <div class="mini-date">{{ .Date.Format "02/01/2006" }}</div>
       </a>
@@ -46,18 +46,19 @@
     <div class="posts-list">
       {{ range $i, $p := after 1 ($posts.ByDate.Reverse) | first 8 }}
 
-      {{ $rootSection := $p.CurrentSection.Parent.Title }}
-      {{ $currentSection := $p.CurrentSection.Title }}
+      {{ $tags := $p.Params.tags | default (slice) }}
+      {{ $rootSection := "" }}
+      {{ if gt (len $tags) 0 }}{{ $rootSection = index $tags 0 }}{{ end }}
       {{ $numClass := "num-tijolo" }}
-      {{ if or (eq $rootSection "Fundo de Papel") (eq $currentSection "Fundo de Papel") }}{{ $numClass = "num-papel" }}{{ end }}
-      {{ if or (eq $rootSection "Fiagro") (eq $currentSection "Fiagro") }}{{ $numClass = "num-fiagro" }}{{ end }}
+      {{ if eq $rootSection "fundo-de-papel" }}{{ $numClass = "num-papel" }}{{ end }}
+      {{ if eq $rootSection "fiagro" }}{{ $numClass = "num-fiagro" }}{{ end }}
 
       <article class="post-card">
         <div class="post-num {{ $numClass }}"></div>
         <div class="post-body">
           <div class="post-cats">
-            {{ with $p.CurrentSection.Parent }}<span class="post-cat-parent">{{ .Title }}</span>{{ end }}
-            <span class="post-cat">{{ $p.CurrentSection.Title }}</span>
+            {{ with index $tags 0 }}<span class="post-cat-parent">{{ . | humanize }}</span>{{ end }}
+            {{ with index $tags 1 }}<span class="post-cat">{{ . | humanize }}</span>{{ end }}
           </div>
           <h2 class="post-title"><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h2>
           <p class="post-excerpt">{{ $p.Summary }}</p>
@@ -69,7 +70,7 @@
       {{ end }}
     </div>
     <div class="see-all">
-      <a href="{{ .Site.BaseURL }}posts/" class="btn-outline">Ver todos os relatórios →</a>
+      <a href="{{ .Site.BaseURL }}fiis/" class="btn-outline">Ver todos os relatórios →</a>
     </div>
   </div>
   {{ partial "sidebar.html" . }}

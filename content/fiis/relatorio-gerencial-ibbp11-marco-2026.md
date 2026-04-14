@@ -3,10 +3,11 @@ title: "IBBP11: 100% ocupado e DY acima de 11% — sustentável?"
 date: 2026-04-13
 description: "IBBP11 entrega 11,25% de yield com desconto de 17% — análise completa do relatório de março/2026"
 ticker: "ibbp11"
+tags: ["fundo-de-tijolo", "logistico"]
 slug: "relatorio-gerencial-ibbp11-marco-2026"
 ---
 
-O **<a href="https://fiidireto.online/tickers/ibbp11/" class="a-tickers">IBBP11</a>**, fundo focado em ativos <a href="https://fiidireto.online/posts/fundo-de-tijolo/logistico/" class="a-tickers">logísticos</a> e industriais, divulgou seu relatório de março de 2026 com números que chamam atenção logo de cara.<!--more--> O fundo distribuiu **R$ 0,074 por cota** na classe ordinária, entregando um **Dividend Yield mensal de 11,25% anualizado**, com a cota sendo negociada a **R$ 8,10**, frente a um valor patrimonial de **R$ 9,76** — um desconto relevante. Além disso, o fundo conta com **1.138 cotistas** e um patrimônio total de mais de **R$ 526 milhões**.
+O **<a href="https://fiidireto.online/tickers/ibbp11/" class="a-tickers">IBBP11</a>**, fundo focado em ativos <a href="https://fiidireto.online/tags/fundo-de-tijolo/logistico/" class="a-tickers">logísticos</a> e industriais, divulgou seu relatório de março de 2026 com números que chamam atenção logo de cara.<!--more--> O fundo distribuiu **R$ 0,074 por cota** na classe ordinária, entregando um **Dividend Yield mensal de 11,25% anualizado**, com a cota sendo negociada a **R$ 8,10**, frente a um valor patrimonial de **R$ 9,76** — um desconto relevante. Além disso, o fundo conta com **1.138 cotistas** e um patrimônio total de mais de **R$ 526 milhões**.
 
 Mas será que esse desconto representa uma oportunidade real… ou existe algum risco escondido por trás desses números?
 

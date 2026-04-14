@@ -12,12 +12,12 @@
       <h1 class="section-title">{{ .Title }}</h1>
       {{ with .Description }}<p class="section-desc">{{ . }}</p>{{ end }}
 
-      {{ if .Sections }}
+      {{ if eq .Section "fiis" }}
       <div class="subcats">
-        {{ range .Sections }}
-        <a href="{{ .RelPermalink }}" class="subcat-pill">
-          {{ .Title }} <span>{{ len .RegularPagesRecursive }}</span>
-        </a>
+        {{ range .Site.Taxonomies.tags.ByCount }}
+          <a href="{{ .Page.RelPermalink }}" class="subcat-pill">
+            {{ .Page.Title | humanize }} <span>{{ .Count }}</span>
+          </a>
         {{ end }}
       </div>
       {{ end }}
@@ -28,18 +28,19 @@
     <div class="posts-list">
       {{ range $i, $p := .RegularPagesRecursive.ByDate.Reverse }}
 
-      {{ $rootSection := $p.CurrentSection.Parent.Title }}
-      {{ $currentSection := $p.CurrentSection.Title }}
+      {{ $tags := $p.Params.tags | default (slice) }}
+      {{ $rootSection := "" }}
+      {{ if gt (len $tags) 0 }}{{ $rootSection = index $tags 0 }}{{ end }}
       {{ $numClass := "num-tijolo" }}
-      {{ if or (eq $rootSection "Fundo de Papel") (eq $currentSection "Fundo de Papel") }}{{ $numClass = "num-papel" }}{{ end }}
-      {{ if or (eq $rootSection "Fiagro") (eq $currentSection "Fiagro") }}{{ $numClass = "num-fiagro" }}{{ end }}
+      {{ if eq $rootSection "fundo-de-papel" }}{{ $numClass = "num-papel" }}{{ end }}
+      {{ if eq $rootSection "fiagro" }}{{ $numClass = "num-fiagro" }}{{ end }}
 
       <article class="post-card">
         <div class="post-num {{ $numClass }}"></div>
         <div class="post-body">
           <div class="post-cats">
-            {{ with $p.CurrentSection.Parent }}<span class="post-cat-parent">{{ .Title }}</span>{{ end }}
-            <span class="post-cat">{{ $p.CurrentSection.Title }}</span>
+            {{ if gt (len $tags) 0 }}<span class="post-cat-parent">{{ (index $tags 0) | humanize }}</span>{{ end }}
+            {{ if gt (len $tags) 1 }}<span class="post-cat">{{ (index $tags 1) | humanize }}</span>{{ end }}
           </div>
           <h2 class="post-title"><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h2>
           <p class="post-excerpt">{{ $p.Summary }}</p>

@@ -3,6 +3,7 @@ title: "VISC11: crescimento de vendas em 16 shoppings — análise do relatório
 date: 2026-03-17
 description: "Com ciclo de cortes de juros à vista, fundo de shoppings projeta ambiente favorável em 2026"
 ticker: "visc11"
+tags: ["fundo-de-tijolo", "shoppings"]
 slug: "relatorio-gerencial-visc11-fevereiro-2026"
 ---
 
